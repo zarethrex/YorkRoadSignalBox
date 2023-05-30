@@ -9,6 +9,7 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    audio.cxx \
     blocksection.cxx \
     framelever.cxx \
     graphics.cxx \
@@ -22,6 +23,7 @@ SOURCES += \
     yrmainwindow.cxx
 
 HEADERS += \
+    audio.hxx \
     blocksection.hxx \
     framelever.hxx \
     global_params.hxx \

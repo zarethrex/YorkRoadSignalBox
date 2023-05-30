@@ -21,10 +21,6 @@ YRB::LeverFrame::LeverFrame(QWidget* parent)
         connect(_levers[i], &YRB::FrameLever::leverUpdate, this, &YRB::LeverFrame::frameLeverUpdate);
     }
 
-    _lever_failed->setSource(QUrl::fromLocalFile(":/audio/audio/lever_fail.wav"));
-    _lever_sound->setSource(QUrl::fromLocalFile(":/audio/audio/lever_move_1.wav"));
-    _panel_update->setSource(QUrl::fromLocalFile(":/audio/audio/panel_update.wav"));
-
 }
 
 void YRB::LeverFrame::update()

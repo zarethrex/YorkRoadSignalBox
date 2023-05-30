@@ -2,7 +2,7 @@
 
 YRB::InterLocking::InterLocking(YRB::LeverFrame* lever_frame)
 {
-    _lever_frame = lever_frame;
+    lever_frame_ = lever_frame;
 
     // Qt is not happy without having at least one template entry
 
@@ -41,14 +41,14 @@ void YRB::InterLocking::update(const int& i)
 
     lever_logic _temp = _logic[i];
 
-    interlock_coordinate _coords = _temp[reverse(_lever_frame->operator[](i)->getState())];
+    interlock_coordinate _coords = _temp[reverse(lever_frame_->operator[](i)->getState())];
 
     for(auto lever : _coords.keys())
     {
-        bool toLock = _lever_frame->operator[](lever)->getState() != _coords[lever] && _lever_frame->operator[](lever)->getState() != YRB::LeverState::Mid;
+        bool toLock = lever_frame_->operator[](lever)->getState() != _coords[lever] && lever_frame_->operator[](lever)->getState() != YRB::LeverState::Mid;
 
         if(toLock) qDebug() << "Lever "<< i << " Locked by Lever " << lever << " !";
-        _lever_frame->operator[](i)->Lock(toLock);
+        lever_frame_->operator[](i)->Lock(toLock);
         if(toLock) return;
     }
 
@@ -59,18 +59,18 @@ void YRB::InterLocking::update(const int& i)
     for(auto lever : _coords.keys())
     {
         lever_logic _lever_log = _logic[lever];
-        if(_lever_log[reverse(_lever_frame->operator[](lever)->getState())].contains(i))
+        if(_lever_log[reverse(lever_frame_->operator[](lever)->getState())].contains(i))
         {
             // Checks that not only the lever is present in other lever lock definition, but attempted move is not a valid
-            if(_lever_log[reverse(_lever_frame->operator[](lever)->getState())][i] != reverse(_lever_frame->operator[](i)->getState()))
+            if(_lever_log[reverse(lever_frame_->operator[](lever)->getState())][i] != reverse(lever_frame_->operator[](i)->getState()))
             {
                 qDebug() << "Locking Lever " << lever;
-                _lever_frame->operator[](lever)->Lock(true);
+                lever_frame_->operator[](lever)->Lock(true);
             }
             else
             {
                 qDebug() << "Releasing Lever " << lever;
-                _lever_frame->operator[](lever)->Lock(false);
+                lever_frame_->operator[](lever)->Lock(false);
             }
         }
     }
@@ -79,12 +79,12 @@ void YRB::InterLocking::update(const int& i)
 
 void YRB::InterLocking::_perform_action(const int& i)
 {
-     qDebug() << "Lever state: " << ((_lever_frame->operator[](i)->getState() == YRB::LeverState::Off) ? "Off" : "On");
+     qDebug() << "Lever state: " << ((lever_frame_->operator[](i)->getState() == YRB::LeverState::Off) ? "Off" : "On");
     if(_signal_lever_connections.contains(i))
     {
         lever_active_signal_state state = _signal_lever_connections[i].second;
 
-        if(reverse(_lever_frame->operator[](i)->getState()) == YRB::LeverState::On)
+        if(reverse(lever_frame_->operator[](i)->getState()) == YRB::LeverState::On)
         {
             qDebug() << "Setting Signal " << state.first->id() << " to On";
             state.first->setOn(true);
@@ -97,7 +97,7 @@ void YRB::InterLocking::_perform_action(const int& i)
     }
     else if(_point_lever_connections.contains(i))
     {
-        if(_lever_frame->operator[](i)->getState() == YRB::LeverState::On)
+        if(lever_frame_->operator[](i)->getState() == YRB::LeverState::On)
         {
             qDebug() << "Setting Points to Reverse";
             _point_lever_connections[i].second->setState(YRB::PointsState::Reverse);
@@ -117,14 +117,14 @@ bool YRB::InterLocking::Query(const int& id)
 
     qDebug() << "Moving Lever " << id;
 
-    if(_lever_frame->operator[](id)->isLocked())
+    if(lever_frame_->operator[](id)->isLocked())
     {
-        _lever_frame->moveLever(id, YRB::LeverState::Mid, id == _points->id());
+        lever_frame_->moveLever(id, YRB::LeverState::Mid, id == _points->id());
         return false;
     }
     else
     {
-        _lever_frame->moveLever(id, YRB::LeverState::Off, id == _points->id());
+        lever_frame_->moveLever(id, YRB::LeverState::Off, id == _points->id());
     }
 
     _perform_action(id);
@@ -160,7 +160,7 @@ void YRB::InterLocking::_connect(const int& id, YRB::PointsLever* lever, YRB::Po
 
 void YRB::InterLocking::_setup_block_sections()
 {
-    QMap<QString, TrackCircuit*> _lf_tc = _lever_frame->getTrackCircuits();
+    QMap<QString, TrackCircuit*> _lf_tc = lever_frame_->getTrackCircuits();
 
     for(const char& alpha : QList<char>({'A', 'B', 'C', 'D', 'E', 'F', 'G'})) {
         _block_sections[alpha] = new YRB::BlockSection(alpha);
@@ -208,10 +208,10 @@ void YRB::InterLocking::_add_signals()
 void YRB::InterLocking::_connect_levers()
 {
     for(const int& sig_id : QList<int>({2, 3, 4})) {
-        _connect(sig_id, (HomeLever*)_lever_frame->operator[](sig_id), _signals[sig_id], YRB::SignalState::Off);
+        _connect(sig_id, (HomeLever*)lever_frame_->operator[](sig_id), _signals[sig_id], YRB::SignalState::Off);
     }
 
-    _connect(6, (PointsLever*)_lever_frame->operator[](6), _points);
+    _connect(6, (PointsLever*)lever_frame_->operator[](6), _points);
 
 }
 

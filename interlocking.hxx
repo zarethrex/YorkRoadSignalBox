@@ -24,7 +24,7 @@ namespace YRB
     {
         Q_OBJECT
         private:
-            LeverFrame* _lever_frame;
+            LeverFrame* lever_frame_;
             interlock_logic _logic;
             QMap<char, BlockSection*> _block_sections;
             QMap<int, Signal*> _signals;
