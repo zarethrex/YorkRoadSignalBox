@@ -9,6 +9,8 @@
 #include <QGuiApplication>
 #include <QScreen>
 #include <QSoundEffect>
+#include <QMediaPlayer>
+#include <QAudioOutput>
 #include <QThread>
 
 #include "scaling.hxx"
@@ -21,15 +23,10 @@ namespace YRB
     {
         Q_OBJECT
         private:
-            QSoundEffect* _lever_sound = new QSoundEffect;
-            QSoundEffect* _lever_failed = new QSoundEffect;
-            QSoundEffect* _panel_update = new QSoundEffect;
             QMap<int, FrameLever*> _levers;
             const Scaler* scaler_ = new Scaler;
             QMap<QString, TrackCircuit*> track_circuits_;
             QWidget* _parent = nullptr;
-            void _play_failed() {_lever_failed->play();}
-            void _play_lever_sound() {_lever_sound->play();}
         public:
             LeverFrame(QWidget* parent);
             FrameLever* operator[](const int& i)
@@ -40,9 +37,9 @@ namespace YRB
             void update();
             void moveLever(const int& i, LeverState lever_state, bool points_move)
             {
-                if(_levers[i]->getState() == LeverState::Mid) _play_failed();
-                else if(lever_state != LeverState::Mid)_play_lever_sound();
-                else _play_failed();
+                if(_levers[i]->getState() == LeverState::Mid) emit leverFailed();
+                else if(lever_state != LeverState::Mid) emit leverMove();
+                else emit leverFailed();
                 _levers[i]->moveLever(lever_state, points_move);
             }
             QMap<QString, TrackCircuit*> getTrackCircuits() {
@@ -50,12 +47,15 @@ namespace YRB
             }
         signals:
             void frameUpdate(int id, YRB::LeverState state);
+            void leverFailed();
+            void leverMove();
+            void panelUpdate();
         public slots:
             void frameLeverUpdate(int id, YRB::LeverState state) {
                 emit frameUpdate(id, state);
             }
-            void panelUpdate() {
-                _panel_update->play();
+            void panelIndicatorUpdate() {
+                QTimer::singleShot(1000, this, &LeverFrame::panelUpdate);
             }
     };
 };
