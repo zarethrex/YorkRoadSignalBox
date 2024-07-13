@@ -40,15 +40,15 @@ namespace YRB
         Spare
     };
 
-    const QList<char> block_ids{'A', 'B', 'C', 'D', 'E', 'F', 'G'};
+    const QList<QString> block_ids{"A", "B", "C", "D", "E1", "E2", "F", "G"};
     const QMap<int, LeverType> levers{
         {1, LeverType::Spare},
         {2, LeverType::Signal},
         {3, LeverType::Signal},
         {4, LeverType::Signal},
-        {5, LeverType::PointLock},
+        {5, LeverType::Spare},
         {6, LeverType::Points},
-        {7, LeverType::Spare},
+        {7, LeverType::PointLock},
         {8, LeverType::Spare},
         {9, LeverType::Spare},
         {10, LeverType::Spare},

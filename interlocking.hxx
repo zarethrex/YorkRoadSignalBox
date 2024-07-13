@@ -26,7 +26,7 @@ namespace YRB
         private:
             LeverFrame* lever_frame_;
             interlock_logic _logic;
-            QMap<char, BlockSection*> _block_sections;
+            QMap<QString, BlockSection*> _block_sections;
             QMap<int, Signal*> _signals;
             Points* _points;
             points_connection _point_lever_connections;
@@ -38,6 +38,7 @@ namespace YRB
             }
 
             void _setup_block_sections();
+            void _create_block_sections();
             void _create_logic_table();
             void _add_points();
             void _add_signals();
@@ -48,8 +49,8 @@ namespace YRB
 
         public:
             InterLocking(LeverFrame* lever_frame);
-            BlockSection* getBlockSection(const char& id) const {return _block_sections[id];}
-            void setOccupied(char block, bool is_occupied=true);
+            BlockSection* getBlockSection(const QString& id) const {return _block_sections[id];}
+            void setOccupied(QString block, bool is_occupied=true);
             bool Query(const int& id);
             void update(const int& id);
         signals:
@@ -63,7 +64,7 @@ namespace YRB
                 qDebug() << "Updating points";
                 emit broadcastPoints(state);
             }
-            void linkBlocks(char block_1_id, char block_2_id);
+            void linkBlocks(QString block_1_id, QString block_2_id);
 
     };
 };

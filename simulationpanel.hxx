@@ -13,6 +13,12 @@ class SimulationPanel : public QMainWindow
 public:
     explicit SimulationPanel(QWidget *parent = nullptr);
     QPushButton* runButton(){return run_button_;}
+    void setRun(){
+        run_button_->setText("Stop");
+    }
+    void setComplete() {
+        run_button_->setText("Run");
+    }
 private:
     QPushButton* run_button_ = new QPushButton(this);
 };

@@ -85,6 +85,7 @@ public slots:
         subsid_amber_svgs_[state]->show();
     }
     void setSignal(int id, YRB::SignalState state) {
+        if(current_state_ == state) return;
         if(id != 2) return;
         state = (state == YRB::SignalState::On) ? state : clear_state_;
         QTimer::singleShot(500, this, [this, state](){setIntermediate(state);});

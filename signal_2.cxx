@@ -45,6 +45,7 @@ Signal2::Signal2(QWidget *parent)
 
     set_caution_subsid_position_(0.123*scaler_->screen_width(), 0.136*scaler_->screen_width());
     set_caution_subsid_size_(0.022*scaler_->screen_width(), 0.022*scaler_->screen_height());
+    setAspect(YRB::SignalState::On);
     update34Status(true);
 }
 

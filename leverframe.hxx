@@ -16,6 +16,7 @@
 #include "scaling.hxx"
 #include "framelever.hxx"
 #include "trackcircuit.hxx"
+#include "global_params.hxx"
 
 namespace YRB
 {

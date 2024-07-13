@@ -24,7 +24,12 @@ YRB::Graphics::Graphics(QWidget* parent)
     _set_point_indicator_position(YRB::PointsState::Reverse, _scaler->scale_width(156.5), _scaler->scale_height(249.25));
     _set_point_indicator_size(YRB::PointsState::Reverse, _scaler->scale_width(20), _scaler->scale_height(20));
 
-    for(const char& block : block_ids) {
+    _block_svgs['0'] = {
+        {false, nullptr},
+        {true, nullptr}
+    };
+
+    for(const char& block : QList<char>({'A', 'B', 'C', 'D', 'E', 'F', 'G'})) {
         QString _block{block};
         _block_svgs[block] = {
           {false, new QSvgWidget(":/svgs/media/Block" + _block + "_On.svg", _parent)},

@@ -30,6 +30,9 @@ namespace YRB {
         void updateSignalGraphic(int id, YRB::SignalState state) {
             _map_indicator_svgs[id][YRB::SignalState::Off]->hide();
             _map_indicator_svgs[id][YRB::SignalState::On]->hide();
+            if(state == YRB::SignalState::Caution && !_map_indicator_svgs[id].contains(YRB::SignalState::Caution)) {
+                state = YRB::SignalState::On;
+            }
             _map_indicator_svgs[id][state]->show();
         }
         void updateLeverGraphic(int id, YRB::LeverState state) {
@@ -54,6 +57,9 @@ namespace YRB {
         }
         void updateBlockGraphic(char block, bool occupied)
         {
+           if(!_block_svgs[block][false]) {
+               return;
+           }
            _block_svgs[block][false]->hide();
            _block_svgs[block][true]->hide();
            _block_svgs[block][occupied]->show();

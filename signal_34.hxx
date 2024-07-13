@@ -57,6 +57,7 @@ public slots:
     }
 
     void setSignal(int id, YRB::SignalState state) {
+        if(signal_state_ == state) return;
         if(id != 3 && id != 4) return;
         signal_state_ = state;
         emit setFeatherIndicator(points_state_);
@@ -74,10 +75,10 @@ public slots:
         subsid_stop_svgs_[YRB::SignalState::Off]->hide();
         subsid_clear_svgs_[YRB::SignalState::On]->hide();
         subsid_clear_svgs_[YRB::SignalState::Off]->hide();
-        clear_svgs_[state]->show();
-        stop_svgs_[state]->show();
-        subsid_clear_svgs_[state]->show();
-        subsid_stop_svgs_[state]->show();
+        if(clear_svgs_[state]) clear_svgs_[state]->show();
+        if(stop_svgs_[state]) stop_svgs_[state]->show();
+        if(subsid_clear_svgs_[state]) subsid_clear_svgs_[state]->show();
+        if(subsid_stop_svgs_[state]) subsid_stop_svgs_[state]->show();
     }
 };
 

@@ -18,13 +18,13 @@ namespace YRB
         Audio(QWidget* parent);
     public slots:
         void playLever() {
-            lever_sound_ -> play();
+            //lever_sound_ -> play();
         }
         void playFail() {
-            lever_fail_ -> play();
+            //lever_fail_ -> play();
         }
         void playIndicator() {
-            indicator_ -> play();
+            //indicator_ -> play();
         }
     };
 };

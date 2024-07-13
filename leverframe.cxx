@@ -4,21 +4,21 @@ YRB::LeverFrame::LeverFrame(QWidget* parent)
 {
     _parent = parent;
 
-    for(int i{1}; i < 12; ++i)
-    {
-        if(QVector<int>({1, 5, 8, 9, 10, 11}).contains(i)) {
-            _levers[i] = new YRB::SpareLever(i, _parent);
-        }
-        else if(QVector<int>({2, 3, 4}).contains(i)) {
-            _levers[i] = new YRB::HomeLever(i, _parent);
-        }
-        else if(i == 7) {
-            _levers[i] = new YRB::FacingPointLockLever(i, _parent);
-        }
-        else {
-            _levers[i] = new YRB::PointsLever(i, _parent);
-        }
-        connect(_levers[i], &YRB::FrameLever::leverUpdate, this, &YRB::LeverFrame::frameLeverUpdate);
+    for(const auto& [id, type] : YRB::levers.toStdMap()) {
+        switch (type) {
+            case LeverType::Spare:
+                _levers[id] = new YRB::SpareLever(id, _parent);
+                break;
+            case LeverType::Signal:
+                _levers[id] = new YRB::HomeLever(id, _parent);
+                break;
+            case LeverType::PointLock:
+                _levers[id] = new YRB::HomeLever(id, _parent);
+                break;
+            default:
+                _levers[id] = new YRB::PointsLever(id, _parent);
+        };
+        connect(_levers[id], &YRB::FrameLever::leverUpdate, this, &YRB::LeverFrame::frameLeverUpdate);
     }
 
 }

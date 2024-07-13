@@ -9,9 +9,10 @@ YRB::InterLocking::InterLocking(YRB::LeverFrame* lever_frame)
     _signal_lever_connections = {{1,{new FrameLever, {new Signal, YRB::SignalState::Off}}}};
     _point_lever_connections = {{6, {new FrameLever, new Points}}};
 
-    _setup_block_sections();
+    _create_block_sections();
     _add_points();
     _add_signals();
+    _setup_block_sections();
     _connect_levers();
     _create_logic_table();
 
@@ -87,12 +88,12 @@ void YRB::InterLocking::_perform_action(const int& i)
         if(reverse(lever_frame_->operator[](i)->getState()) == YRB::LeverState::On)
         {
             qDebug() << "Setting Signal " << state.first->id() << " to On";
-            state.first->setOn(true);
+            state.first->setOn(false);
         }
         else
         {
             qDebug() << "Clearing Signal " << state.first->id() << " to Off: Aspect " << int(state.first->getState());
-            state.first->tryClear(state.second);
+            state.first->tryClear(false);
         }
     }
     else if(_point_lever_connections.contains(i))
@@ -101,12 +102,12 @@ void YRB::InterLocking::_perform_action(const int& i)
         {
             qDebug() << "Setting Points to Reverse";
             _point_lever_connections[i].second->setState(YRB::PointsState::Reverse);
-            linkBlocks('E', 'G');
+            linkBlocks("D", "E1");
         }
         else {
             qDebug() << "Setting Points to Normal";
             _point_lever_connections[i].second->setState(YRB::PointsState::Normal);
-            linkBlocks('E', 'F');
+            linkBlocks("D", "E2");
         }
     }
 }
@@ -132,15 +133,18 @@ bool YRB::InterLocking::Query(const int& id)
     return true;
 }
 
-void YRB::InterLocking::linkBlocks(char block_1_id, char block_2_id)
+void YRB::InterLocking::linkBlocks(QString block_1_id, QString block_2_id)
 {
     if(_block_sections.contains(block_1_id) && _block_sections.contains(block_2_id))
     {
         _block_sections[block_1_id]->setNeighbour(_block_sections[block_2_id]);
     }
+    else {
+        qDebug() << "Linking failed: " << block_1_id << "->" << block_2_id;
+    }
 }
 
-void YRB::InterLocking::setOccupied(char block, bool is_occupied)
+void YRB::InterLocking::setOccupied(QString block, bool is_occupied)
 {
     _block_sections[block]->setOccupied(is_occupied);
 }
@@ -158,51 +162,64 @@ void YRB::InterLocking::_connect(const int& id, YRB::PointsLever* lever, YRB::Po
     connect(points, &YRB::Points::pointsStateChanged, this, &YRB::InterLocking::pointsUpdate);
 }
 
-void YRB::InterLocking::_setup_block_sections()
+void YRB::InterLocking::_create_block_sections()
 {
     QMap<QString, TrackCircuit*> _lf_tc = lever_frame_->getTrackCircuits();
 
-    for(const char& alpha : QList<char>({'A', 'B', 'C', 'D', 'E', 'F', 'G'})) {
+    _block_sections["0"] = new YRB::BlockSection("0");
+
+    for(const QString& alpha : block_ids) {
         _block_sections[alpha] = new YRB::BlockSection(alpha);
     }
-    _block_sections['C']->setBlockSignal(_signals[2]);
-    _block_sections['F']->setBlockSignal(_signals[3]);
-    _block_sections['E']->setBlockSignal(_signals[4]);
-    linkBlocks('A', 'B');
-    linkBlocks('B', 'C');
-    linkBlocks('C', 'D');
-    linkBlocks('D', 'E');
-    linkBlocks('E', 'F');
+    linkBlocks("0", "A");
+    linkBlocks("A", "B");
+    linkBlocks("B", "C");
+    linkBlocks("C", "D");
+    linkBlocks("D", "E2");
+    linkBlocks("E2", "F");
+    linkBlocks("E1", "G");
+    linkBlocks("F", "0");
+    linkBlocks("G", "0");
+}
+
+void YRB::InterLocking::_setup_block_sections()
+{
+    qDebug() << "Setting block signals";
+    _block_sections["C"]->setBlockSignal(_signals[2]);
+    _block_sections["D"]->setBlockSignal(_signals[2]);
+    _block_sections["E1"]->setBlockSignal(_signals[3]);
+    _block_sections["G"]->setBlockSignal(_signals[3]);
+    _block_sections["E2"]->setBlockSignal(_signals[4]);
+    _block_sections["F"]->setBlockSignal(_signals[4]);
 }
 
 void YRB::InterLocking::_add_points()
 {
     _points = new YRB::Points(6);
 
-    _block_sections['E']->setBlockPoints(_points);
-    _block_sections['E']->setRequiredPointsState(PointsState::Normal);
-    _block_sections['F']->setBlockPoints(_points);
-    _block_sections['F']->setRequiredPointsState(PointsState::Reverse);
+    _block_sections["E1"]->setBlockPoints(_points);
+    _block_sections["E1"]->setRequiredPointsState(PointsState::Normal);
+    _block_sections["E2"]->setBlockPoints(_points);
+    _block_sections["E2"]->setRequiredPointsState(PointsState::Reverse);
 }
 
 void YRB::InterLocking::_add_signals()
 {
-    _signals[2] = new YRB::Signal(2);
-    _signals[3] = new YRB::Signal(3);
-    _signals[4] = new YRB::Signal(4);
+    _signals[2] = new YRB::Signal(2, 3);
+    _signals[3] = new YRB::Signal(3, 2);
+    _signals[4] = new YRB::Signal(4, 2);
 
-    _block_sections['C']->setBlockSignal(_signals[2]);
-    _block_sections['C']->setRequiredState(YRB::SignalState::Off);
-    connect(_block_sections['C'], &YRB::BlockSection::blockStatusChanged, _signals[2], &YRB::Signal::signalUpdateFromBlock);
+    _block_sections["C"]->setRequiredState(YRB::SignalState::Off);
+    connect(_block_sections["C"], &YRB::BlockSection::blockStatusChanged, _signals[2], &YRB::Signal::signalUpdateFromBlock);
+    connect(_block_sections["D"], &YRB::BlockSection::blockStatusChanged, _signals[2], &YRB::Signal::signalUpdateFromBlock);
 
+    _block_sections["E2"]->setRequiredState(YRB::SignalState::Off);
+    connect(_block_sections["E2"], &YRB::BlockSection::blockStatusChanged, _signals[4], &YRB::Signal::signalUpdateFromBlock);
+    connect(_block_sections["G"], &YRB::BlockSection::blockStatusChanged, _signals[4], &YRB::Signal::signalUpdateFromBlock);
 
-    _block_sections['E']->setBlockSignal(_signals[4]);
-    _block_sections['E']->setRequiredState(YRB::SignalState::Off);
-    connect(_block_sections['E'], &YRB::BlockSection::blockStatusChanged, _signals[4], &YRB::Signal::signalUpdateFromBlock);
-
-    _block_sections['F']->setBlockSignal(_signals[3]);
-    _block_sections['F']->setRequiredState(YRB::SignalState::Off);
-    connect(_block_sections['F'], &YRB::BlockSection::blockStatusChanged, _signals[3], &YRB::Signal::signalUpdateFromBlock);
+    _block_sections["E1"]->setRequiredState(YRB::SignalState::Off);
+    connect(_block_sections["E1"], &YRB::BlockSection::blockStatusChanged, _signals[3], &YRB::Signal::signalUpdateFromBlock);
+    connect(_block_sections["F"], &YRB::BlockSection::blockStatusChanged, _signals[3], &YRB::Signal::signalUpdateFromBlock);
 }
 
 void YRB::InterLocking::_connect_levers()

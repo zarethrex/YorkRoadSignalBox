@@ -3,10 +3,12 @@
 
 #include <QObject>
 #include <QTimer>
+#include <QDebug>
 #include "global_params.hxx"
 
 namespace YRB
 {
+    class BlockSection;
 
     class Signal : public QObject
     {
@@ -14,36 +16,56 @@ namespace YRB
         private:
             const int _id = -1;
             bool protected_block_occupied = false;
-            SignalState _previous_state = SignalState::On;
-            SignalState _current_state = SignalState::On;
+            const int _n_aspects = 3;
+            SignalState signal_aspect_ = SignalState::On;
+            LeverState control_position_ = LeverState::Off;
+            QMap<QString, bool> _block_states{};
         public:
             Signal() {}
-            Signal(const int& id) : _id(id) {};
-            SignalState getState() const {return _current_state;};
-            int id() const {return _id;}
-            void tryClear(SignalState state = SignalState::Off) {
-                if(!protected_block_occupied)
-                {
-                    _current_state = state;
-                    _previous_state = state;
-                    QTimer::singleShot(1000, this, [this]{signalAspectChanged(_id, _current_state);});
-                }
+            Signal(const int& id, int n_aspects=3) : _id(id), _n_aspects(n_aspects) {};
+            SignalState getState() const {return signal_aspect_;};
+            void addBlock(QString block_id) {
+                _block_states.insert(block_id, false);
             }
-            void setOn(bool set_on)
+            bool has_neighbour = false;
+            int id() const {return _id;}
+            void tryClear(bool from_track_circuit) {
+                YRB::SignalState state = YRB::SignalState::Off;
+                if(!from_track_circuit) {
+                    control_position_ = LeverState::On;
+                    state = SignalState::Off;
+                    if(has_neighbour) state = (protected_block_occupied) ? SignalState::Off : ((_n_aspects == 3) ? SignalState::Caution : SignalState::On);
+                }
+                else {
+                    state = (control_position_ == LeverState::Off) ? SignalState::On : SignalState::Off;
+                }
+                signal_aspect_ = state;
+                QTimer::singleShot(1000, this, [this]{signalAspectChanged(_id, signal_aspect_);});
+
+            }
+            void setOn(bool from_track_circuit)
             {
-                if(!set_on) return;
-                _current_state = SignalState::On;
-                _previous_state = SignalState::On;
-                QTimer::singleShot(1000, this, [this]{signalAspectChanged(_id, _current_state);});
+                signal_aspect_ = SignalState::On;
+                if(!from_track_circuit) {
+                    control_position_ = LeverState::Off;
+                }
+                QTimer::singleShot(1000, this, [this]{signalAspectChanged(_id, signal_aspect_);});
             }
         signals:
             void signalAspectChanged(int id, YRB::SignalState state);
         public slots:
-            void signalUpdateFromBlock(bool is_occupied)
+            void signalUpdateFromBlock(QString block, bool is_occupied)
             {
-                protected_block_occupied = is_occupied;
-                if(is_occupied) _current_state = SignalState::On;
-                _current_state = _previous_state;
+                if(!_block_states.contains(block)) return;
+                qDebug() << "BLOCK=" << block << " " << " SIGNAL=" << _id << " OCCUPIED=" << is_occupied;
+                _block_states[block] = is_occupied;
+                if(is_occupied && signal_aspect_ != SignalState::On) {
+                    setOn(true);
+                    return;
+                }
+                if(std::all_of(_block_states.begin(), _block_states.end(), [](const auto& pair) {return !pair;}) && signal_aspect_ != SignalState::Off) {
+                    tryClear(true);
+                }
             }
     };
 
