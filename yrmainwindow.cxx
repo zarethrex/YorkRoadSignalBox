@@ -99,6 +99,11 @@ void YRMainWindow::move_service() {
     }
 
     const QString new_pos_ = interlocking_->getBlockSection(end_block_)->getNext()->id();
+
+    if(service_held_) {
+        qDebug() << "Service still held";
+    }
+
     if(!simulation_running_) {
         sim_timer_->stop();
         return;
@@ -109,7 +114,15 @@ void YRMainWindow::move_service() {
         sim_panel_->setComplete();
     }
 
-    service_position_.push_back(new_pos_);
+    QTimer::singleShot(service_held_ ? 5000 : 1, this, [this, new_pos_]() {
+
+        if(service_held_) {
+            qDebug() << "Service released";
+            service_held_ = false;
+        }
+
+        service_position_.push_back(new_pos_);
+    });
 }
 
 void YRMainWindow::run_service()  {
