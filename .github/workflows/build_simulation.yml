@@ -1,0 +1,51 @@
+name: York Road
+
+on:
+    push:
+        branches: ["main"]
+    pull_request:
+        branches: ["main"]
+
+jobs:
+    build:
+        name: Build for ${{ matrix.os }}
+        runs-on: ${{ matrix.os }}
+
+        strategy:
+            fail-fast: false
+            matrix:
+                include:
+                    - os: ubuntu-latest
+                      qt_arch: gcc_64
+                      make_cmd: make -j$(nproc)
+                    - os: windows-latest
+                      qt_arch: win64_msvc2019_64
+                      make_cmd: nmake
+                    - os: macos-latest
+                      qt_arch: clang_64
+                      make_cmd: make -j$(sysctl -n hw.ncpu)
+
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v4
+
+            - name: Install Qt
+              uses: jurplel/install-qt-action@v4
+              with:
+                  version: "6.5.0"
+                  arch: ${{ matrix.qt_arch }}
+
+            - name: Set up MSVC (Windows Only)
+              if: runner.os == 'Windows'
+              uses: ilammy/msvc-dev-cmd@v1
+
+            - name: Create Build Directory
+              run: mkdir build
+
+            - name: Run qmake
+              run: qmake ../YorkRoadSignalBox.pro
+              working-directory: ./build
+
+            - name: Build project
+              run: ${{ matrix.make_cmd }}
+              working-directory: ./build
