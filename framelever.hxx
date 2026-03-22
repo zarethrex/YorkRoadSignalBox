@@ -26,11 +26,12 @@ namespace YRB
             int _coords[2] = {0,0};
             const int _id = -1;
             bool _locked = false;
+            const QString name;
             LeverState _current_state = LeverState::Off, _prev_state= LeverState::Off;
         public:
             FrameLever(){}
             FrameLever(const int& id, const QString& lever_name, QWidget* parent, LeverType type) :
-                _parent(parent), _type(type), _id(id)
+                _parent(parent), _type(type), _id(id), name(lever_name)
             {
             }
             LeverState reverse(LeverState state) const

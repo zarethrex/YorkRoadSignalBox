@@ -4,6 +4,10 @@
 #include <QObject>
 #include <QTimer>
 #include <QDebug>
+
+#include <memory>
+
+#include "framelever.hxx"
 #include "global_params.hxx"
 
 namespace YRB
@@ -14,11 +18,11 @@ namespace YRB
     {
         Q_OBJECT
         private:
-            const int _id = -1;
-            bool protected_block_occupied = false;
-            const int _n_aspects = 3;
-            SignalState signal_aspect_ = SignalState::On;
-            LeverState control_position_ = LeverState::Off;
+            const int _id{-1};
+            bool protected_block_occupied{false};
+            const int _n_aspects{3};
+            SignalState signal_aspect_{SignalState::On};
+            HomeLever* control_lever;
             QMap<QString, bool> _block_states{};
         public:
             Signal() {}
@@ -29,26 +33,34 @@ namespace YRB
             }
             bool has_neighbour = false;
             int id() const {return _id;}
-            void tryClear(bool from_track_circuit) {
+            void setLever(HomeLever* lever) {
+                control_lever = lever;
+            }
+            void tryClear(bool is_lever_action) {
                 YRB::SignalState state = YRB::SignalState::Off;
-                if(!from_track_circuit) {
-                    control_position_ = LeverState::On;
+                if(is_lever_action) {
+                    qDebug() << "Attempting signal clear by lever action for Signal " << _id;
                     state = SignalState::Off;
                     if(has_neighbour) state = (protected_block_occupied) ? SignalState::Off : ((_n_aspects == 3) ? SignalState::Caution : SignalState::On);
+                    if(state != SignalState::Off) {
+                        qDebug() << "State change blocked by track circuit occupancy";
+                    }
                 }
-                else {
-                    state = (control_position_ == LeverState::Off) ? SignalState::On : SignalState::Off;
+                else if(control_lever) {
+                    qDebug() << "Automatic signal state change, attempting switch to clear " << _id;
+                    state = (control_lever->getState() == LeverState::Off) ? SignalState::On : SignalState::Off;
+                    if(state != SignalState::Off) {
+                        qDebug() << "Signal held at On by lever position: " << ((control_lever->getState() == LeverState::Off) ? "Off" : "On");
+                    }
                 }
+                if(signal_aspect_ == state) return;
                 signal_aspect_ = state;
                 QTimer::singleShot(1000, this, [this]{signalAspectChanged(_id, signal_aspect_);});
 
             }
-            void setOn(bool from_track_circuit)
+            void setOn()
             {
                 signal_aspect_ = SignalState::On;
-                if(!from_track_circuit) {
-                    control_position_ = LeverState::Off;
-                }
                 QTimer::singleShot(1000, this, [this]{signalAspectChanged(_id, signal_aspect_);});
             }
         signals:
@@ -60,11 +72,11 @@ namespace YRB
                 qDebug() << "BLOCK=" << block << " " << " SIGNAL=" << _id << " OCCUPIED=" << is_occupied;
                 _block_states[block] = is_occupied;
                 if(is_occupied && signal_aspect_ != SignalState::On) {
-                    setOn(true);
+                    setOn();
                     return;
                 }
                 if(std::all_of(_block_states.begin(), _block_states.end(), [](const auto& pair) {return !pair;}) && signal_aspect_ != SignalState::Off) {
-                    tryClear(true);
+                    tryClear(false);
                 }
             }
     };

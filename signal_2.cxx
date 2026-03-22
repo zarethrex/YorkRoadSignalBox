@@ -3,8 +3,7 @@
 Signal2::Signal2(QWidget *parent)
     : QMainWindow{parent}
 {
-    const YRB::Scaler* scaler_ = new YRB::Scaler;
-    this->setGeometry(1.02*scaler_->screen_width(), 0.4*scaler_->screen_height(), 0.2*scaler_->screen_width(), 0.3*scaler_->screen_height());
+    this->setGeometry(1.02*YRB::SCALER.screen_width(), 0.4*YRB::SCALER.screen_height(), 0.2*YRB::SCALER.screen_width(), 0.3*YRB::SCALER.screen_height());
     this->setWindowTitle("YR.2");
     signal_2_svg_->setGeometry(0, 0, this->width(), this->height());
     signal_2_svg_->show();
@@ -28,23 +27,23 @@ Signal2::Signal2(QWidget *parent)
     subsid_amber_svgs_[YRB::SignalState::On] = new QSvgWidget(":/svgs/media/Sig34Subsid_Off.svg", this);
     subsid_amber_svgs_[YRB::SignalState::Caution] = new QSvgWidget(":/svgs/media/Sig34Subsid_AmberOn.svg", this);
 
-    set_stop_sig_size_(0.052*scaler_->screen_width(), 0.052*scaler_->screen_width());
-    set_stop_sig_position_(0.076*scaler_->screen_width(), 0.1672*scaler_->screen_height());
+    set_stop_sig_size_(0.052*YRB::SCALER.screen_width(), 0.052*YRB::SCALER.screen_width());
+    set_stop_sig_position_(0.076*YRB::SCALER.screen_width(), 0.1672*YRB::SCALER.screen_height());
 
-    set_clear_sig_size_(0.051*scaler_->screen_width(), 0.051*scaler_->screen_width());
-    set_clear_sig_position_(0.0761*scaler_->screen_width(), 0.045*scaler_->screen_height());
+    set_clear_sig_size_(0.051*YRB::SCALER.screen_width(), 0.051*YRB::SCALER.screen_width());
+    set_clear_sig_position_(0.0761*YRB::SCALER.screen_width(), 0.045*YRB::SCALER.screen_height());
 
-    set_caution_sig_size_(0.051*scaler_->screen_width(), 0.051*scaler_->screen_width());
-    set_caution_sig_position_(0.0761*scaler_->screen_width(), 0.106*scaler_->screen_height());
+    set_caution_sig_size_(0.051*YRB::SCALER.screen_width(), 0.051*YRB::SCALER.screen_width());
+    set_caution_sig_position_(0.0761*YRB::SCALER.screen_width(), 0.106*YRB::SCALER.screen_height());
 
-    set_clear_subsid_position_(0.123*scaler_->screen_width(), 0.08*scaler_->screen_width());
-    set_clear_subsid_size_(0.022*scaler_->screen_width(), 0.022*scaler_->screen_height());
+    set_clear_subsid_position_(0.123*YRB::SCALER.screen_width(), 0.08*YRB::SCALER.screen_width());
+    set_clear_subsid_size_(0.022*YRB::SCALER.screen_width(), 0.022*YRB::SCALER.screen_height());
 
-    set_stop_subsid_position_(0.123*scaler_->screen_width(), 0.194*scaler_->screen_width());
-    set_stop_subsid_size_(0.022*scaler_->screen_width(), 0.022*scaler_->screen_height());
+    set_stop_subsid_position_(0.123*YRB::SCALER.screen_width(), 0.194*YRB::SCALER.screen_width());
+    set_stop_subsid_size_(0.022*YRB::SCALER.screen_width(), 0.022*YRB::SCALER.screen_height());
 
-    set_caution_subsid_position_(0.123*scaler_->screen_width(), 0.136*scaler_->screen_width());
-    set_caution_subsid_size_(0.022*scaler_->screen_width(), 0.022*scaler_->screen_height());
+    set_caution_subsid_position_(0.123*YRB::SCALER.screen_width(), 0.136*YRB::SCALER.screen_width());
+    set_caution_subsid_size_(0.022*YRB::SCALER.screen_width(), 0.022*YRB::SCALER.screen_height());
     setAspect(YRB::SignalState::On);
     update34Status(true);
 }

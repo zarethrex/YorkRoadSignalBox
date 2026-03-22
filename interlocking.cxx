@@ -80,7 +80,7 @@ void YRB::InterLocking::update(const int& i)
 
 void YRB::InterLocking::_perform_action(const int& i)
 {
-     qDebug() << "Lever state: " << ((lever_frame_->operator[](i)->getState() == YRB::LeverState::Off) ? "Off" : "On");
+    qDebug() << "Lever state: " << ((lever_frame_->operator[](i)->getState() == YRB::LeverState::Off) ? "Off" : "On");
     if(_signal_lever_connections.contains(i))
     {
         lever_active_signal_state state = _signal_lever_connections[i].second;
@@ -88,12 +88,12 @@ void YRB::InterLocking::_perform_action(const int& i)
         if(reverse(lever_frame_->operator[](i)->getState()) == YRB::LeverState::On)
         {
             qDebug() << "Setting Signal " << state.first->id() << " to On";
-            state.first->setOn(false);
+            state.first->setOn();
         }
         else
         {
             qDebug() << "Clearing Signal " << state.first->id() << " to Off: Aspect " << int(state.first->getState());
-            state.first->tryClear(false);
+            state.first->tryClear(true);
         }
     }
     else if(_point_lever_connections.contains(i))
@@ -153,6 +153,7 @@ void YRB::InterLocking::_connect(const int& id, YRB::HomeLever* lever, YRB::Sign
 {
     _signal_lever_connections[id] = {};
     _signal_lever_connections[id] = {lever, {signal, aspect}};
+    signal->setLever(lever);
     connect(signal, &YRB::Signal::signalAspectChanged, this, &YRB::InterLocking::signalAspectUpdate);
 }
 

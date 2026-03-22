@@ -9,6 +9,7 @@
 #include <QTimer>
 #include "scaling.hxx"
 #include "global_params.hxx"
+#include <memory>
 
 class Signal34 : public QMainWindow
 {

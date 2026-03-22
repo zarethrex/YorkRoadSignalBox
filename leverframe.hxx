@@ -25,7 +25,6 @@ namespace YRB
         Q_OBJECT
         private:
             QMap<int, FrameLever*> _levers;
-            const Scaler* scaler_ = new Scaler;
             QMap<QString, TrackCircuit*> track_circuits_;
             QWidget* _parent = nullptr;
         public:
@@ -51,6 +50,7 @@ namespace YRB
             void leverFailed();
             void leverMove();
             void panelUpdate();
+            void panelChanged();
         public slots:
             void frameLeverUpdate(int id, YRB::LeverState state) {
                 emit frameUpdate(id, state);

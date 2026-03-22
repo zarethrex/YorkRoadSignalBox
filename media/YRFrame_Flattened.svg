@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="540"
+   height="500"
+   viewBox="0 0 142.87501 132.29167"
+   version="1.1"
+   id="svg2263"
+   sodipodi:docname="YRFrame_Flattened.svg"
+   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview2265"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="2.1997092"
+     inkscape:cx="255.48831"
+     inkscape:cy="192.98005"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g11929"
+     inkscape:lockguides="true"
+     units="px"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#d1d1d1" />
+  <defs
+     id="defs2260">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient52102">
+      <stop
+         style="stop-color:#8e6438;stop-opacity:1"
+         offset="0"
+         id="stop52098" />
+      <stop
+         style="stop-color:#a77742;stop-opacity:1;"
+         offset="0.21766393"
+         id="stop52620" />
+      <stop
+         style="stop-color:#966631;stop-opacity:1"
+         offset="1"
+         id="stop52100" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient12906">
+      <stop
+         style="stop-color:#cdb524;stop-opacity:1"
+         offset="0"
+         id="stop12902" />
+      <stop
+         style="stop-color:#d8be1c;stop-opacity:1"
+         offset="0.18258353"
+         id="stop53118" />
+      <stop
+         style="stop-color:#d8b700;stop-opacity:1"
+         offset="1"
+         id="stop12904" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient32406">
+      <stop
+         style="stop-color:#b5cbc7;stop-opacity:1;"
+         offset="0"
+         id="stop32400" />
+      <stop
+         style="stop-color:#ccdcda;stop-opacity:1"
+         offset="0.69999999"
+         id="stop32402" />
+      <stop
+         style="stop-color:#f2f8f7;stop-opacity:1"
+         offset="1"
+         id="stop32404" />
+    </linearGradient>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Greyscale"
+       id="filter21815"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feColorMatrix
+         values="1.50602 -0.60241 1.68675 -0.060241 0 1.50602 -0.60241 1.68675 -0.060241 0 1.50602 -0.60241 1.68675 -0.060241 0 0 0 0 1 0 "
+         id="feColorMatrix21813" />
+    </filter>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient17769"
+       id="radialGradient17771"
+       cx="150.24902"
+       cy="74.948563"
+       fx="150.24902"
+       fy="74.948563"
+       r="150.12758"
+       gradientTransform="matrix(2.0383451,0,0,0.87773783,-154.90364,9.1633727)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient17769">
+      <stop
+         style="stop-color:#b5cbc7;stop-opacity:1;"
+         offset="0"
+         id="stop17765" />
+      <stop
+         style="stop-color:#b6c9c6;stop-opacity:1"
+         offset="0.69999999"
+         id="stop18285" />
+      <stop
+         style="stop-color:#b1c8c3;stop-opacity:1"
+         offset="1"
+         id="stop17767" />
+    </linearGradient>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient32406"
+       id="radialGradient17771-9"
+       cx="150.24902"
+       cy="74.948563"
+       fx="150.24902"
+       fy="74.948563"
+       r="150.12758"
+       gradientTransform="matrix(0.58332166,0,0,0.26362046,-34.013044,117.78853)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient52102"
+       id="linearGradient52104"
+       x1="151.27919"
+       y1="176.48416"
+       x2="151.76271"
+       y2="265.07755"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient12906"
+       id="linearGradient52796"
+       x1="54.316433"
+       y1="186.84465"
+       x2="53.94772"
+       y2="258.67712"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient12906"
+       id="linearGradient53798"
+       gradientUnits="userSpaceOnUse"
+       x1="54.316433"
+       y1="186.84465"
+       x2="53.94772"
+       y2="258.67712"
+       gradientTransform="matrix(0.63312716,0,0,1,98.703735,0)" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g11929"
+       transform="matrix(0.40187194,0,0,0.40187194,10.611884,8.1706573)">
+      <rect
+         style="fill:#8f683d;fill-opacity:1;stroke:none;stroke-width:1.05344;stroke-linecap:round;stroke-opacity:1;stop-color:#000000"
+         id="rect19409"
+         width="335.79474"
+         height="183.37752"
+         x="-16.72554"
+         y="-16.022062"
+         inkscape:export-filename="C:\Users\kzare\Documents\GitHub\YorkRoadSignalBox\media\YorkRoadFramepng"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <rect
+         style="fill:#845727;fill-opacity:1;stroke:none;stroke-width:0.976352;stroke-linecap:round;stroke-opacity:1;stop-color:#000000"
+         id="rect19409-8"
+         width="317.75256"
+         height="166.46756"
+         x="-7.8247423"
+         y="-8.0481987"
+         inkscape:export-filename="C:\Users\kzare\Documents\GitHub\YorkRoadSignalBox\media\YorkRoadFramepng"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <rect
+         style="fill:url(#radialGradient17771);fill-opacity:1;stroke:none;stroke-width:0.307463;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+         id="rect86009"
+         width="300.25516"
+         height="150"
+         x="1.2281392"
+         y="-0.051439922"
+         inkscape:export-filename="C:\Users\kzare\Documents\GitHub\YorkRoadSignalBox\media\YorkRoadFramepng"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:2.77188px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0692971px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="260.34988"
+         y="48.319847"
+         id="text7127-6-9-9-4-6-6-8-5"
+         transform="scale(1.0001569,0.99984313)"
+         inkscape:export-filename="C:\Users\kzare\Documents\GitHub\YorkRoadSignalBox\media\YorkRoadFramepng"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96"><tspan
+           sodipodi:role="line"
+           id="tspan7125-5-0-1-3-7-6-5-9"
+           x="260.34988"
+           y="48.319847"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Arial;-inkscape-font-specification:'Arial Bold';stroke-width:0.0692971px">EASTBOUND  (BRANCH)</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:2.77188px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0692971px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="261.40805"
+         y="90.205597"
+         id="text7127-6-9-9-4-6-6-8-5-8"
+         transform="scale(1.0001569,0.99984313)"
+         inkscape:export-filename="C:\Users\kzare\Documents\GitHub\YorkRoadSignalBox\media\YorkRoadFramepng"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96"><tspan
+           sodipodi:role="line"
+           id="tspan7125-5-0-1-3-7-6-5-9-5"
+           x="261.40805"
+           y="90.205597"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Arial;-inkscape-font-specification:'Arial Bold';stroke-width:0.0692971px">EASTBOUND  (MAIN)</tspan></text>
+      <path
+         style="font-weight:bold;font-size:15.8575px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Bold';letter-spacing:1.64917px;word-spacing:0px;stroke-width:0.396436px"
+         d="m 97.793876,29.731384 v -4.777381 l -4.157948,-6.573739 h 2.686793 l 2.671308,4.490893 2.617111,-4.490893 h 2.64033 l -4.17343,6.589225 v 4.761895 z m 8.780404,-5.605874 q 0,-1.734414 0.51877,-2.911338 0.38715,-0.867207 1.05304,-1.556327 0.67363,-0.689119 1.47115,-1.022065 1.06078,-0.449089 2.44677,-0.449089 2.5087,0 4.01083,1.556327 1.50987,1.556326 1.50987,4.328292 0,2.748736 -1.49439,4.305063 -1.49438,1.548584 -3.99534,1.548584 -2.53194,0 -4.02632,-1.540841 -1.49438,-1.548584 -1.49438,-4.258606 z m 2.36159,-0.07743 q 0,1.927987 0.89043,2.926824 0.89044,0.991094 2.26093,0.991094 1.3705,0 2.24545,-0.983351 0.88269,-0.991094 0.88269,-2.965539 0,-1.951215 -0.85946,-2.911338 -0.85172,-0.960122 -2.26868,-0.960122 -1.41695,0 -2.28416,0.975608 -0.8672,0.967865 -0.8672,2.926824 z m 12.09437,5.683303 v -11.35112 h 4.82383 q 1.81959,0 2.64034,0.309716 0.82849,0.301974 1.32404,1.084009 0.49555,0.782035 0.49555,1.788615 0,1.277582 -0.75107,2.113817 -0.75106,0.828492 -2.24544,1.045294 0.74332,0.433604 1.22338,0.952379 0.4878,0.518776 1.30855,1.842815 l 1.38598,2.214475 h -2.74099 l -1.65698,-2.469991 q -0.8827,-1.32404 -1.2079,-1.664728 -0.3252,-0.348431 -0.68912,-0.472318 -0.36392,-0.13163 -1.1537,-0.13163 h -0.46457 v 4.738667 z m 2.2919,-6.55051 h 1.6957 q 1.64924,0 2.05962,-0.139373 0.41037,-0.139372 0.64266,-0.480061 0.23229,-0.340688 0.23229,-0.851721 0,-0.572976 -0.30972,-0.921407 -0.30197,-0.356175 -0.85947,-0.44909 -0.27874,-0.03871 -1.67247,-0.03871 h -1.78861 z m 10.83227,6.55051 v -11.35112 h 2.29191 v 5.040641 l 4.63026,-5.040641 h 3.08168 l -4.27409,4.421207 4.50638,6.929913 h -2.96554 l -3.12039,-5.327129 -1.8583,1.897016 v 3.430113 z m 25.18751,0 v -11.35112 h 4.82384 q 1.81958,0 2.64033,0.309716 0.8285,0.301974 1.32404,1.084009 0.49555,0.782035 0.49555,1.788615 0,1.277582 -0.75106,2.113817 -0.75107,0.828492 -2.24545,1.045294 0.74332,0.433604 1.22338,0.952379 0.48781,0.518776 1.30855,1.842815 l 1.38599,2.214475 h -2.741 l -1.65698,-2.469991 q -0.88269,-1.32404 -1.2079,-1.664728 -0.3252,-0.348431 -0.68912,-0.472318 -0.36391,-0.13163 -1.15369,-0.13163 h -0.46458 v 4.738667 z m 2.2919,-6.55051 h 1.6957 q 1.64924,0 2.05962,-0.139373 0.41037,-0.139372 0.64266,-0.480061 0.23229,-0.340688 0.23229,-0.851721 0,-0.572976 -0.30972,-0.921407 -0.30197,-0.356175 -0.85946,-0.44909 -0.27875,-0.03871 -1.67247,-0.03871 h -1.78862 z m 10.33673,0.944636 q 0,-1.734414 0.51877,-2.911338 0.38715,-0.867207 1.05304,-1.556327 0.67363,-0.689119 1.47115,-1.022065 1.06078,-0.449089 2.44677,-0.449089 2.5087,0 4.01083,1.556327 1.50987,1.556326 1.50987,4.328292 0,2.748736 -1.49439,4.305063 -1.49438,1.548584 -3.99534,1.548584 -2.53194,0 -4.02632,-1.540841 -1.49438,-1.548584 -1.49438,-4.258606 z m 2.36159,-0.07743 q 0,1.927987 0.89043,2.926824 0.89044,0.991094 2.26093,0.991094 1.3705,0 2.24545,-0.983351 0.88269,-0.991094 0.88269,-2.965539 0,-1.951215 -0.85946,-2.911338 -0.85172,-0.960122 -2.26868,-0.960122 -1.41695,0 -2.28416,0.975608 -0.8672,0.967865 -0.8672,2.926824 z m 22.32276,5.683303 h -2.49322 l -0.99109,-2.578392 h -4.53735 l -0.9369,2.578392 h -2.43127 l 4.42121,-11.35112 h 2.42353 z m -4.21989,-4.490893 -1.56407,-4.212149 -1.5331,4.212149 z m 7.07696,-6.860227 h 4.18892 q 1.41696,0 2.16028,0.216801 0.99883,0.294231 1.71118,1.045295 0.71235,0.751063 1.08401,1.842815 0.37166,1.084008 0.37166,2.67905 0,1.401468 -0.34843,2.415791 -0.42586,1.238867 -1.21564,2.005416 -0.5962,0.580719 -1.61053,0.905922 -0.7588,0.24003 -2.02864,0.24003 h -4.31281 z m 2.29191,1.920244 v 7.518375 h 1.71118 q 0.96012,0 1.38598,-0.108401 0.55749,-0.139372 0.92141,-0.472318 0.37166,-0.332946 0.60395,-1.091752 0.23229,-0.766549 0.23229,-2.082845 0,-1.316297 -0.23229,-2.020902 -0.23229,-0.704606 -0.65041,-1.099495 -0.41811,-0.394889 -1.06078,-0.534261 -0.48006,-0.108401 -1.88152,-0.108401 z"
+         id="text7127-8"
+         transform="scale(1.0001569,0.99984313)"
+         aria-label="YORK  ROAD" />
+      <path
+         style="font-weight:bold;font-size:7.58354px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Bold';letter-spacing:0.788683px;word-spacing:0px;stroke-width:0.189588px"
+         d="m 131.62406,42.712095 1.06273,0.336964 q -0.24439,0.888696 -0.81464,1.321935 -0.56654,0.429537 -1.44042,0.429537 -1.08125,0 -1.7774,-0.736877 -0.69614,-0.740581 -0.69614,-2.021784 0,-1.355262 0.69985,-2.103247 0.69984,-0.751689 1.84034,-0.751689 0.99608,0 1.61817,0.588761 0.37029,0.348073 0.55543,0.999783 l -1.08495,0.259203 q -0.0963,-0.422131 -0.40362,-0.666522 -0.30363,-0.244391 -0.74058,-0.244391 -0.60357,0 -0.98126,0.433239 -0.374,0.433239 -0.374,1.403399 0,1.029406 0.37029,1.466349 0.37029,0.436942 0.96276,0.436942 0.43694,0 0.75169,-0.277718 0.31474,-0.277717 0.45175,-0.873884 z m 7.68719,1.995863 h -1.19234 l -0.47397,-1.233066 h -2.1699 l -0.44805,1.233066 h -1.16271 l 2.11436,-5.428452 h 1.159 z m -2.01808,-2.147682 -0.74799,-2.014378 -0.73318,2.014378 z m 3.39182,-3.28077 h 2.1699 q 0.6443,0 0.95905,0.05554 0.31845,0.05184 0.56654,0.222174 0.2518,0.170333 0.41843,0.455457 0.16663,0.28142 0.16663,0.633196 0,0.381398 -0.20736,0.699848 -0.20366,0.318449 -0.55544,0.477674 0.49619,0.144413 0.7628,0.492486 0.26661,0.348072 0.26661,0.818341 0,0.37029 -0.17404,0.722065 -0.17033,0.348073 -0.47027,0.559138 -0.29623,0.207363 -0.73317,0.2555 -0.27401,0.02962 -1.32194,0.03703 h -1.84774 z m 1.09606,0.903508 v 1.255283 h 0.71836 q 0.6406,0 0.79612,-0.01851 0.28142,-0.03333 0.44065,-0.192551 0.16292,-0.162928 0.16292,-0.425834 0,-0.251797 -0.14071,-0.407319 -0.137,-0.159224 -0.41102,-0.192551 -0.16293,-0.01851 -0.93683,-0.01851 z m 0,2.158791 v 1.451537 h 1.01459 q 0.59246,0 0.75169,-0.03333 0.24439,-0.04443 0.39621,-0.214768 0.15552,-0.174037 0.15552,-0.462863 0,-0.244391 -0.11849,-0.414725 -0.11849,-0.170333 -0.34437,-0.248094 -0.22218,-0.07776 -0.97016,-0.07776 z m 5.13218,2.366153 v -5.428452 h 1.09606 v 5.428452 z m 2.94007,0 v -5.428452 h 1.06643 l 2.22175,3.62514 v -3.62514 h 1.01829 v 5.428452 h -1.09976 l -2.18841,-3.539973 v 3.539973 z m 13.33404,0 v -2.284689 l -1.98846,-3.143763 h 1.28491 l 1.2775,2.147682 1.25158,-2.147682 h 1.26269 l -1.99586,3.151168 v 2.277284 z m 4.42493,0 v -5.428452 h 2.30691 q 0.87018,0 1.26269,0.148116 0.39621,0.144413 0.63319,0.518406 0.23699,0.373993 0.23699,0.85537 0,0.610979 -0.35918,1.010892 -0.35918,0.39621 -1.07384,0.499892 0.35547,0.207362 0.58505,0.455456 0.23329,0.248095 0.62579,0.881291 l 0.66282,1.059029 h -1.31082 l -0.79242,-1.181225 q -0.42214,-0.633196 -0.57766,-0.796124 -0.15552,-0.16663 -0.32956,-0.225877 -0.17403,-0.06295 -0.55173,-0.06295 h -0.22217 v 2.266175 z m 1.09606,-3.132653 h 0.81093 q 0.78872,0 0.98498,-0.06665 0.19625,-0.06665 0.30734,-0.22958 0.11108,-0.162927 0.11108,-0.407319 0,-0.274014 -0.14811,-0.440645 -0.14442,-0.170333 -0.41102,-0.214768 -0.13331,-0.01851 -0.79983,-0.01851 h -0.85537 z"
+         id="text7127-6"
+         transform="scale(1.0001569,0.99984313)"
+         aria-label="CABIN  YR" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:3.51135px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0.0256877px;word-spacing:0px;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0876505px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="183.00377"
+         y="61.339249"
+         id="text7127-6-7"
+         transform="scale(1.0001569,0.99984313)"
+         inkscape:export-filename="C:\Users\kzare\Documents\GitHub\YorkRoadSignalBox\media\YorkRoadFramepng"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96"><tspan
+           sodipodi:role="line"
+           x="183.01662"
+           y="61.339249"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.51135px;font-family:Arial;-inkscape-font-specification:'Arial Bold';text-align:center;text-anchor:middle;stroke-width:0.0876505px"
+           id="tspan11689">SIGNAL</tspan></text>
+      <path
+         sodipodi:type="star"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.209;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path10224-2-5-7-5-8"
+         sodipodi:sides="3"
+         sodipodi:cx="144.95341"
+         sodipodi:cy="137.70119"
+         sodipodi:r1="0.12302899"
+         sodipodi:r2="0.061514493"
+         sodipodi:arg1="0.95249996"
+         sodipodi:arg2="1.9996975"
+         inkscape:flatsided="false"
+         inkscape:rounded="0"
+         inkscape:randomized="0"
+         inkscape:transform-center-x="-0.0099109705"
+         inkscape:transform-center-y="0.017137619"
+         transform="matrix(-9.0061427,4.1620148,-4.1620148,-9.0061427,1952.3779,715.47291)"
+         d="m 145.02473,137.80144 -0.0969,-0.0443 -0.0969,-0.0443 0.0868,-0.0618 0.0868,-0.0618 0.0101,0.10607 z" />
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path7146-5-3-3-3"
+         d="M 73.781057,78.831763 V 70.910114"
+         style="fill:#812b2f;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.902619;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path8896-6-5"
+         d="m 73.776731,73.421881 h 3.215591"
+         style="fill:#812b2f;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.902619;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         sodipodi:type="star"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.209;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path10224-2-5-7-5-8-7"
+         sodipodi:sides="3"
+         sodipodi:cx="144.95341"
+         sodipodi:cy="137.70119"
+         sodipodi:r1="0.12302899"
+         sodipodi:r2="0.061514493"
+         sodipodi:arg1="0.95249996"
+         sodipodi:arg2="1.9996975"
+         inkscape:flatsided="false"
+         inkscape:rounded="0"
+         inkscape:randomized="0"
+         inkscape:transform-center-x="-0.011630922"
+         inkscape:transform-center-y="-0.0034188357"
+         transform="matrix(-9.0183285,-4.135544,-4.135544,9.0183285,2069.9141,-553.71292)"
+         d="m 145.02473,137.80144 -0.0969,-0.0443 -0.0969,-0.0443 0.0868,-0.0618 0.0868,-0.0618 0.0101,0.10607 z" />
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path7146-5-3-3-3-7"
+         d="m 193.19344,88.798881 v 6.604895"
+         style="fill:#812b2f;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.902619;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path8896-6-5-8"
+         d="m 193.18911,92.892009 h 3.21559"
+         style="fill:#812b2f;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.902619;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         sodipodi:type="star"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.209;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="path10224-2-5-7-5-8-8"
+         sodipodi:sides="3"
+         sodipodi:cx="144.95341"
+         sodipodi:cy="137.70119"
+         sodipodi:r1="0.12302899"
+         sodipodi:r2="0.061514493"
+         sodipodi:arg1="0.95249996"
+         sodipodi:arg2="1.9996975"
+         inkscape:flatsided="false"
+         inkscape:rounded="0"
+         inkscape:randomized="0"
+         inkscape:transform-center-x="-0.010551513"
+         inkscape:transform-center-y="0.01756755"
+         transform="matrix(-9.0140169,4.1449334,-4.1449334,-9.0140169,2070.4481,719.30043)"
+         d="m 145.02473,137.80144 -0.0969,-0.0443 -0.0969,-0.0443 0.0868,-0.0618 0.0868,-0.0618 0.0101,0.10607 z"
+         inkscape:export-filename="C:\Users\kzare\Documents\GitHub\YorkRoadSignalBox\media\YorkRoadFramepng"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path7146-5-3-3-3-1"
+         d="M 193.06155,78.275679 193.01793,62.60549"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.902619;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         inkscape:export-filename="C:\Users\kzare\Documents\GitHub\YorkRoadSignalBox\media\YorkRoadFramepng"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <path
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path8896-6-5-2"
+         d="m 193.05722,64.928292 h 3.21559"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.902619;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         inkscape:export-filename="C:\Users\kzare\Documents\GitHub\YorkRoadSignalBox\media\YorkRoadFramepng"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:0.565;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+         id="rect865"
+         width="53.93729"
+         height="10.903756"
+         x="138.03867"
+         y="66.59536"
+         inkscape:export-filename="C:\Users\kzare\Documents\GitHub\YorkRoadSignalBox\media\YorkRoadFramepng"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:0.565;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+         id="rect865-7"
+         width="5.5429564"
+         height="10.903755"
+         x="186.433"
+         y="66.59536"
+         inkscape:export-filename="C:\Users\kzare\Documents\GitHub\YorkRoadSignalBox\media\YorkRoadFramepng"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 186.433,66.59536 5.54295,10.903756"
+         id="path2072"
+         inkscape:export-filename="C:\Users\kzare\Documents\GitHub\YorkRoadSignalBox\media\YorkRoadFramepng"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="M 191.97595,66.59536 186.433,77.499114"
+         id="path2074"
+         inkscape:export-filename="C:\Users\kzare\Documents\GitHub\YorkRoadSignalBox\media\YorkRoadFramepng"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:6.6663px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.166659px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="204.25072"
+         y="95.284706"
+         id="text3663-9-6-1-2"
+         inkscape:export-filename="C:\Users\kzare\Documents\GitHub\YorkRoadSignalBox\media\YorkRoadFramepng"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96"><tspan
+           sodipodi:role="line"
+           id="tspan3661-3-5-8-8"
+           x="204.25072"
+           y="95.284706"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Gill Sans';-inkscape-font-specification:'Gill Sans';stroke-width:0.166659px">4</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:6.6663px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.166659px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="203.70506"
+         y="67.475502"
+         id="text3663-9-6-1-2-6"
+         inkscape:export-filename="C:\Users\kzare\Documents\GitHub\YorkRoadSignalBox\media\YorkRoadFramepng"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96"><tspan
+           sodipodi:role="line"
+           id="tspan3661-3-5-8-8-9"
+           x="203.70506"
+           y="67.475502"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Gill Sans';-inkscape-font-specification:'Gill Sans';stroke-width:0.166659px">3</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:6.6663px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.166659px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="197.07918"
+         y="75.389626"
+         id="text3663-9-6-1-2-6-7"
+         inkscape:export-filename="C:\Users\kzare\Documents\GitHub\YorkRoadSignalBox\media\YorkRoadFramepng"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96"><tspan
+           sodipodi:role="line"
+           id="tspan3661-3-5-8-8-9-4"
+           x="197.07918"
+           y="75.389626"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Gill Sans';-inkscape-font-specification:'Gill Sans';stroke-width:0.166659px">6</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:6.6663px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.166659px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="85.070412"
+         y="75.136002"
+         id="text3663-9-6-1-2-6-7-6"
+         inkscape:export-filename="C:\Users\kzare\Documents\GitHub\YorkRoadSignalBox\media\YorkRoadFramepng"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96"><tspan
+           sodipodi:role="line"
+           id="tspan3661-3-5-8-8-9-4-4"
+           x="85.070412"
+           y="75.136002"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Gill Sans';-inkscape-font-specification:'Gill Sans';stroke-width:0.166659px">2</tspan></text>
+      <g
+         id="g20751"
+         inkscape:export-filename="C:\Users\kzare\Documents\GitHub\YorkRoadSignalBox\media\YorkRoadFramepng"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96">
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 294.29962,47.713918 h 4.80541"
+           id="path20188"
+           sodipodi:nodetypes="cc" />
+        <path
+           style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 296.93136,46.650772 v 2.147551 l 2.80911,-1.084405 z"
+           id="path20190"
+           sodipodi:nodetypes="cccc" />
+      </g>
+      <g
+         id="g20751-2"
+         transform="translate(-0.18042158,41.376681)"
+         inkscape:export-filename="C:\Users\kzare\Documents\GitHub\YorkRoadSignalBox\media\YorkRoadFramepng"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96">
+        <path
+           style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 292.21586,47.713918 h 6.88917"
+           id="path20188-7"
+           sodipodi:nodetypes="cc" />
+        <path
+           style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           d="m 296.93136,46.650772 v 2.147551 l 2.80911,-1.084405 z"
+           id="path20190-3"
+           sodipodi:nodetypes="cccc" />
+      </g>
+      <path
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 1.7279692,80.628865 H 300.99915 V 86.92268 H 1.7279692 Z"
+         id="path2415"
+         sodipodi:nodetypes="ccccc"
+         inkscape:export-filename="C:\Users\kzare\Documents\GitHub\YorkRoadSignalBox\media\YorkRoadFramepng"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <path
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 198,77.907216 c 0,0 15.30927,-7e-6 27.5567,-11.567009 8.95998,-8.462192 16.27809,-15.768038 32.91585,-15.984745 0.25269,-0.0033 42.25266,-0.0049 42.50969,-0.0049 v 6.123712 c 0,0 -41.88967,0.01671 -42.50969,0.03067 -3.32659,0.07488 -15.01721,1.252184 -26.62204,13.747686 C 220.05353,82.954975 198,84.881443 198,84.881443 Z"
+         id="path2703-4"
+         sodipodi:nodetypes="cssccsscc"
+         inkscape:export-filename="C:\Users\kzare\Documents\GitHub\YorkRoadSignalBox\media\YorkRoadFramepng"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <rect
+         style="fill:#ae7940;fill-opacity:1;stroke:none;stroke-width:1.01183;stroke-linecap:round;stroke-opacity:1;stop-color:#000000"
+         id="rect28760"
+         width="352.84924"
+         height="11.44213"
+         x="-24.890488"
+         y="167.01524"
+         rx="5.2426291"
+         ry="5.2426291"
+         inkscape:export-filename="C:\Users\kzare\Documents\GitHub\YorkRoadSignalBox\media\YorkRoadFramepng"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <rect
+         style="fill:url(#linearGradient52104);fill-opacity:1;stroke:none;stroke-width:0.964999;stroke-linecap:round;stroke-opacity:1;stop-color:#000000"
+         id="rect29542"
+         width="335.10309"
+         height="91.175255"
+         x="-16.329897"
+         y="177.58763"
+         inkscape:export-filename="C:\Users\kzare\Documents\GitHub\YorkRoadSignalBox\media\YorkRoadFramepng"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <rect
+         style="fill:#76430d;fill-opacity:1;stroke:none;stroke-width:0.964999;stroke-linecap:round;stroke-opacity:1;stop-color:#000000"
+         id="rect30042"
+         width="103.42268"
+         height="58.855667"
+         x="2.4568732"
+         y="107.84536"
+         inkscape:export-filename="C:\Users\kzare\Documents\GitHub\YorkRoadSignalBox\media\YorkRoadFramepng"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <rect
+         style="fill:url(#radialGradient17771-9);fill-opacity:1;stroke:none;stroke-width:0.0901395;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;stop-color:#000000"
+         id="rect86009-6"
+         width="85.925262"
+         height="45.051117"
+         x="10.667834"
+         y="115.02094"
+         inkscape:export-filename="C:\Users\kzare\Documents\GitHub\YorkRoadSignalBox\media\YorkRoadFramepng"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <rect
+         style="fill:url(#linearGradient52796);fill-opacity:1;stroke-width:0.91902;stroke-linecap:round;stop-color:#000000;opacity:0.75502008"
+         id="rect938"
+         width="75.055374"
+         height="73.612"
+         x="17.801596"
+         y="185.95488"
+         inkscape:export-filename="C:\Users\kzare\Documents\GitHub\YorkRoadSignalBox\media\YorkRoadFramepng"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <rect
+         style="opacity:0.75502;fill:url(#linearGradient53798);fill-opacity:1;stroke-width:0.731258;stroke-linecap:round;stop-color:#000000"
+         id="rect938-5"
+         width="47.519596"
+         height="73.612"
+         x="109.9744"
+         y="185.95488"
+         inkscape:export-filename="C:\Users\kzare\Documents\GitHub\YorkRoadSignalBox\media\YorkRoadFramepng"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <rect
+         style="fill:#c0884a;fill-opacity:1;stroke-width:0.498866;stroke-linecap:round;stop-color:#000000"
+         id="rect3368"
+         width="335.10309"
+         height="13.114805"
+         x="-16.329897"
+         y="287.28372"
+         inkscape:export-filename="C:\Users\kzare\Documents\GitHub\YorkRoadSignalBox\media\YorkRoadFramepng"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <rect
+         style="fill:#b17d44;fill-opacity:1;stroke-width:0.673279;stroke-linecap:round;stop-color:#000000"
+         id="rect3368-2"
+         width="335.10309"
+         height="23.888271"
+         x="-16.329897"
+         y="266.1171"
+         inkscape:export-filename="C:\Users\kzare\Documents\GitHub\YorkRoadSignalBox\media\YorkRoadFramepng"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <rect
+         style="fill:#000000;fill-opacity:0.827982;stroke-width:0.495218;stroke-linecap:round;stop-color:#000000"
+         id="rect3368-2-3"
+         width="320.2626"
+         height="13.522555"
+         x="-8.706275"
+         y="271.67157"
+         inkscape:export-filename="C:\Users\kzare\Documents\GitHub\YorkRoadSignalBox\media\YorkRoadFramepng"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <rect
+         style="fill:#000000;stroke-width:0.808513;stroke-linecap:round;stop-color:#000000"
+         id="rect10983-4"
+         width="14.91485"
+         height="14.91485"
+         x="75.536499"
+         y="142.74661"
+         inkscape:export-filename="C:\Users\kzare\Documents\GitHub\YorkRoadSignalBox\media\YorkRoadFramepng"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <rect
+         style="fill:#000000;stroke-width:0.808513;stroke-linecap:round;stop-color:#000000"
+         id="rect10983-4-4"
+         width="14.91485"
+         height="14.91485"
+         x="75.536499"
+         y="118.40495"
+         inkscape:export-filename="C:\Users\kzare\Documents\GitHub\YorkRoadSignalBox\media\YorkRoadFramepng"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="M 10.79611,137.84208 H 96.705964"
+         id="path11273"
+         sodipodi:nodetypes="cc"
+         inkscape:export-filename="C:\Users\kzare\Documents\GitHub\YorkRoadSignalBox\media\YorkRoadFramepng"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+      <text
+         xml:space="preserve"
+         style="font-size:26.3351px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;stroke-width:0.658377"
+         x="-74.871338"
+         y="156.80988"
+         id="text16481"
+         inkscape:export-filename="C:\Users\kzare\Documents\GitHub\YorkRoadSignalBox\media\YorkRoadFramepng"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96"><tspan
+           sodipodi:role="line"
+           id="tspan16479"
+           style="stroke-width:0.658377"
+           x="-74.871338"
+           y="156.80988" /></text>
+      <text
+         xml:space="preserve"
+         style="font-size:3.51135px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;stroke-width:0.658377"
+         x="177.54086"
+         y="65.268898"
+         id="text32230"
+         inkscape:export-filename="C:\Users\kzare\Documents\GitHub\YorkRoadSignalBox\media\YorkRoadFramepng"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96"><tspan
+           sodipodi:role="line"
+           id="tspan32228"
+           style="font-weight:bold;font-size:3.51135px;stroke-width:0.658377"
+           x="177.54086"
+           y="65.268898">CABIN</tspan></text>
+      <path
+         style="font-weight:bold;font-size:4.8281px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Bold';text-align:center;letter-spacing:0.0461314px;word-spacing:0px;text-anchor:middle;stroke-width:0.157408px"
+         d="m 14.680083,149.25328 v -3.45605 h 1.119799 q 0.636517,0 0.82983,0.0519 0.297041,0.0778 0.497426,0.33948 0.200385,0.25932 0.200385,0.67188 0,0.31826 -0.115516,0.53514 -0.115516,0.21689 -0.294684,0.34184 -0.17681,0.12259 -0.360693,0.16266 -0.249892,0.0495 -0.723743,0.0495 h -0.454992 v 1.30368 z m 0.697812,-2.8714 v 0.98071 h 0.38191 q 0.412557,0 0.551648,-0.0542 0.139091,-0.0542 0.216888,-0.16974 0.08015,-0.11552 0.08015,-0.26875 0,-0.1886 -0.110802,-0.31119 -0.110801,-0.12259 -0.280539,-0.15323 -0.124946,-0.0236 -0.502141,-0.0236 z m 2.427177,1.16459 q 0,-0.52807 0.15795,-0.88641 0.117874,-0.26403 0.320616,-0.47385 0.2051,-0.20981 0.44792,-0.31119 0.322973,-0.13673 0.744961,-0.13673 0.76382,0 1.221169,0.47385 0.459707,0.47385 0.459707,1.31783 0,0.8369 -0.454992,1.31075 -0.454991,0.4715 -1.216455,0.4715 -0.770893,0 -1.225884,-0.46914 -0.454992,-0.47149 -0.454992,-1.29661 z m 0.719028,-0.0236 q 0,0.58701 0.271109,0.89112 0.27111,0.30176 0.688382,0.30176 0.417272,0 0.683667,-0.2994 0.268751,-0.30176 0.268751,-0.90291 0,-0.59409 -0.261679,-0.88641 -0.259322,-0.29233 -0.690739,-0.29233 -0.431417,0 -0.695454,0.29704 -0.264037,0.29469 -0.264037,0.89113 z m 3.202785,1.73038 v -3.45605 h 0.697811 v 3.45605 z m 1.415822,0 v -3.45605 h 0.678952 l 1.414482,2.30796 v -2.30796 h 0.648305 v 3.45605 h -0.700169 l -1.393266,-2.25374 v 2.25374 z m 4.303724,0 v -2.8714 h -1.0255 v -0.58465 h 2.746454 v 0.58465 h -1.023143 v 2.8714 z m 2.040551,-1.12451 0.678952,-0.066 q 0.06129,0.34183 0.247534,0.50214 0.188598,0.16031 0.506857,0.16031 0.337118,0 0.506856,-0.14145 0.172095,-0.14381 0.172095,-0.33476 0,-0.12259 -0.07308,-0.20746 -0.07072,-0.0872 -0.249892,-0.15088 -0.122589,-0.0424 -0.558721,-0.15088 -0.561078,-0.13909 -0.787395,-0.34183 -0.318259,-0.28525 -0.318259,-0.69545 0,-0.26404 0.148521,-0.49271 0.150878,-0.23104 0.431417,-0.35127 0.282897,-0.12023 0.681309,-0.12023 0.650662,0 0.978351,0.28526 0.330046,0.28525 0.346548,0.76146 l -0.697811,0.0307 q -0.04479,-0.2664 -0.193313,-0.38191 -0.146163,-0.11788 -0.440847,-0.11788 -0.304114,0 -0.476209,0.12495 -0.110801,0.0802 -0.110801,0.21453 0,0.12259 0.103728,0.20981 0.132019,0.1108 0.641232,0.23103 0.509214,0.12024 0.752034,0.2499 0.245177,0.1273 0.38191,0.35126 0.139091,0.2216 0.139091,0.54929 0,0.29704 -0.165023,0.55636 -0.165023,0.25933 -0.46678,0.38663 -0.301756,0.12494 -0.752033,0.12494 -0.655377,0 -1.00664,-0.30175 -0.351263,-0.30412 -0.41963,-0.88405 z m 4.653969,0 0.678952,-0.066 q 0.06129,0.34183 0.247534,0.50214 0.188598,0.16031 0.506857,0.16031 0.337118,0 0.506856,-0.14145 0.172095,-0.14381 0.172095,-0.33476 0,-0.12259 -0.07308,-0.20746 -0.07072,-0.0872 -0.249892,-0.15088 -0.122589,-0.0424 -0.558721,-0.15088 -0.561078,-0.13909 -0.787395,-0.34183 -0.318259,-0.28525 -0.318259,-0.69545 0,-0.26404 0.148521,-0.49271 0.150878,-0.23104 0.431417,-0.35127 0.282897,-0.12023 0.681309,-0.12023 0.650662,0 0.97835,0.28526 0.330046,0.28525 0.346549,0.76146 l -0.697812,0.0307 q -0.04479,-0.2664 -0.193312,-0.38191 -0.146163,-0.11788 -0.440847,-0.11788 -0.304114,0 -0.476209,0.12495 -0.110802,0.0802 -0.110802,0.21453 0,0.12259 0.103729,0.20981 0.132019,0.1108 0.641232,0.23103 0.509214,0.12024 0.752033,0.2499 0.245177,0.1273 0.381911,0.35126 0.13909,0.2216 0.13909,0.54929 0,0.29704 -0.165022,0.55636 -0.165023,0.25933 -0.46678,0.38663 -0.301756,0.12494 -0.752033,0.12494 -0.655377,0 -1.00664,-0.30175 -0.351263,-0.30412 -0.41963,-0.88405 z m 3.443246,1.12451 v -3.45605 h 2.562571 v 0.58465 h -1.864759 v 0.76618 h 1.735098 v 0.58229 h -1.735098 v 0.94064 h 1.930768 v 0.58229 z m 4.044403,0 v -2.8714 h -1.0255 v -0.58465 h 2.746454 v 0.58465 h -1.023143 v 2.8714 z m 4.38286,0 v -2.8714 h -1.0255 v -0.58465 h 2.746454 v 0.58465 h -1.023142 v 2.8714 z m 1.988689,-1.70681 q 0,-0.52807 0.15795,-0.88641 0.117874,-0.26403 0.320616,-0.47385 0.2051,-0.20981 0.44792,-0.31119 0.322973,-0.13673 0.744961,-0.13673 0.76382,0 1.221169,0.47385 0.459707,0.47385 0.459707,1.31783 0,0.8369 -0.454992,1.31075 -0.454992,0.4715 -1.216455,0.4715 -0.770893,0 -1.225884,-0.46914 -0.454992,-0.47149 -0.454992,-1.29661 z m 0.719028,-0.0236 q 0,0.58701 0.271109,0.89112 0.27111,0.30176 0.688382,0.30176 0.417272,0 0.683666,-0.2994 0.268752,-0.30176 0.268752,-0.90291 0,-0.59409 -0.261679,-0.88641 -0.259322,-0.29233 -0.690739,-0.29233 -0.431417,0 -0.695454,0.29704 -0.264037,0.29469 -0.264037,0.89113 z"
+         id="text7127-6-7-9-8"
+         transform="scale(1.0001569,0.99984313)"
+         aria-label="POINTS SET TO" />
+      <path
+         style="font-weight:bold;font-size:4.8281px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;stroke-width:1.18235"
+         d="m 14.68238,156.30414 v -3.45605 h 2.562571 v 0.58465 h -1.86476 v 0.76618 h 1.735099 v 0.58229 h -1.735099 v 0.94063 h 1.930769 v 0.5823 z m 6.336881,0 H 20.260156 L 19.9584,155.5191 h -1.381478 l -0.285254,0.78504 h -0.740246 l 1.346116,-3.45605 h 0.737888 z m -1.284821,-1.36733 -0.476209,-1.28247 -0.466779,1.28247 z m 1.478134,0.24281 0.678952,-0.066 q 0.06129,0.34183 0.247534,0.50214 0.188598,0.1603 0.506856,0.1603 0.337119,0 0.506857,-0.14144 0.172095,-0.14381 0.172095,-0.33476 0,-0.12259 -0.07308,-0.20746 -0.07072,-0.0872 -0.249892,-0.15088 -0.122588,-0.0424 -0.55872,-0.15088 -0.561078,-0.13909 -0.787395,-0.34183 -0.318259,-0.28526 -0.318259,-0.69546 0,-0.26403 0.148521,-0.49271 0.150878,-0.23103 0.431417,-0.35126 0.282896,-0.12023 0.681309,-0.12023 0.650662,0 0.97835,0.28525 0.330046,0.28526 0.346548,0.76147 l -0.697811,0.0306 q -0.04479,-0.26639 -0.193312,-0.38191 -0.146164,-0.11787 -0.440848,-0.11787 -0.304113,0 -0.476209,0.12495 -0.110801,0.0802 -0.110801,0.21453 0,0.12258 0.103729,0.20981 0.132018,0.1108 0.641232,0.23103 0.509214,0.12023 0.752033,0.24989 0.245177,0.12731 0.38191,0.35127 0.139091,0.2216 0.139091,0.54929 0,0.29704 -0.165023,0.55636 -0.165023,0.25932 -0.466779,0.38663 -0.301756,0.12494 -0.752033,0.12494 -0.655377,0 -1.00664,-0.30175 -0.351263,-0.30412 -0.41963,-0.88406 z m 4.175081,1.12452 v -2.8714 h -1.0255 v -0.58465 h 2.746454 v 0.58465 h -1.023142 v 2.8714 z m 2.173588,-3.45605 h 1.381478 q 0.4102,0 0.610585,0.0354 0.202742,0.033 0.360693,0.14145 0.160308,0.10844 0.266394,0.28997 0.106086,0.17916 0.106086,0.40312 0,0.24282 -0.132018,0.44556 -0.129661,0.20275 -0.353621,0.30412 0.315901,0.0919 0.485639,0.31354 0.169738,0.2216 0.169738,0.521 0,0.23575 -0.110801,0.45971 -0.108443,0.2216 -0.299399,0.35598 -0.188597,0.13202 -0.466779,0.16266 -0.174453,0.0189 -0.841617,0.0236 h -1.176378 z m 0.697812,0.57522 v 0.79918 h 0.457349 q 0.407842,0 0.506856,-0.0118 0.179168,-0.0212 0.280539,-0.12258 0.103729,-0.10373 0.103729,-0.27111 0,-0.16031 -0.08958,-0.25933 -0.08723,-0.10137 -0.261679,-0.12258 -0.103729,-0.0118 -0.59644,-0.0118 z m 0,1.3744 v 0.92413 h 0.645947 q 0.377195,0 0.478566,-0.0212 0.155593,-0.0283 0.252249,-0.13674 0.09901,-0.1108 0.09901,-0.29468 0,-0.15559 -0.07544,-0.26404 -0.07544,-0.10844 -0.219245,-0.15795 -0.141448,-0.0495 -0.617657,-0.0495 z m 2.645082,-0.20038 q 0,-0.52807 0.15795,-0.88641 0.117874,-0.26404 0.320616,-0.47385 0.2051,-0.20982 0.44792,-0.31119 0.322973,-0.13673 0.74496,-0.13673 0.763821,0 1.22117,0.47385 0.459707,0.47385 0.459707,1.31783 0,0.8369 -0.454992,1.31075 -0.454992,0.47149 -1.216455,0.47149 -0.770893,0 -1.225885,-0.46913 -0.454991,-0.4715 -0.454991,-1.29661 z m 0.719028,-0.0236 q 0,0.58701 0.271109,0.89113 0.271109,0.30175 0.688382,0.30175 0.417272,0 0.683666,-0.29939 0.268752,-0.30176 0.268752,-0.90292 0,-0.59408 -0.261679,-0.8864 -0.259322,-0.29233 -0.690739,-0.29233 -0.431417,0 -0.695454,0.29704 -0.264037,0.29468 -0.264037,0.89112 z m 3.173156,-1.72566 h 0.697811 v 1.87183 q 0,0.44556 0.02593,0.57758 0.04479,0.21217 0.212172,0.34183 0.169738,0.1273 0.462064,0.1273 0.297042,0 0.44792,-0.12023 0.150878,-0.12258 0.181525,-0.29939 0.03065,-0.17682 0.03065,-0.58702 v -1.9119 h 0.697811 v 1.81525 q 0,0.62237 -0.05658,0.87934 -0.05658,0.25696 -0.209815,0.43377 -0.150878,0.17681 -0.405485,0.2829 -0.254607,0.10372 -0.664807,0.10372 -0.495068,0 -0.752033,-0.11315 -0.254607,-0.11552 -0.403127,-0.29704 -0.148521,-0.18389 -0.19567,-0.38427 -0.06837,-0.29704 -0.06837,-0.87698 z m 3.498486,3.45605 v -3.45605 h 0.678951 l 1.414483,2.30796 v -2.30796 h 0.648304 v 3.45605 h -0.700169 l -1.393265,-2.25374 v 2.25374 z m 3.47727,-3.45605 h 1.275391 q 0.431418,0 0.657735,0.066 0.304114,0.0896 0.521001,0.31825 0.216887,0.22868 0.330046,0.56108 0.113158,0.33005 0.113158,0.81569 0,0.4267 -0.106086,0.73553 -0.129661,0.37719 -0.370123,0.61058 -0.181525,0.17681 -0.490354,0.27583 -0.231032,0.0731 -0.617657,0.0731 h -1.313111 z m 0.697811,0.58465 v 2.2891 h 0.521001 q 0.292327,0 0.421987,-0.033 0.169738,-0.0424 0.280539,-0.14381 0.113159,-0.10137 0.183883,-0.3324 0.07072,-0.23339 0.07072,-0.63416 0,-0.40077 -0.07072,-0.6153 -0.07072,-0.21453 -0.198027,-0.33476 -0.127304,-0.12023 -0.322974,-0.16267 -0.146163,-0.033 -0.572865,-0.033 z m 5.226513,3.88747 h -0.454992 q -0.360693,-0.54458 -0.549291,-1.13159 -0.188597,-0.58701 -0.188597,-1.1363 0,-0.68131 0.233389,-1.28954 0.202743,-0.52807 0.513929,-0.97363 h 0.452634 q -0.322973,0.71431 -0.445562,1.21645 -0.120231,0.49979 -0.120231,1.06087 0,0.38662 0.07072,0.79211 0.07308,0.40548 0.198028,0.77089 0.08251,0.24046 0.289969,0.69074 z m 0.516287,-4.47212 h 1.381477 q 0.4102,0 0.610585,0.0354 0.202743,0.033 0.360693,0.14145 0.160308,0.10844 0.266395,0.28997 0.106086,0.17916 0.106086,0.40312 0,0.24282 -0.132019,0.44556 -0.12966,0.20275 -0.35362,0.30412 0.315901,0.0919 0.485639,0.31354 0.169738,0.2216 0.169738,0.521 0,0.23575 -0.110801,0.45971 -0.108444,0.2216 -0.299399,0.35598 -0.188598,0.13202 -0.466779,0.16266 -0.174453,0.0189 -0.841617,0.0236 h -1.176378 z m 0.697811,0.57522 v 0.79918 h 0.457349 q 0.407843,0 0.506856,-0.0118 0.179168,-0.0212 0.28054,-0.12258 0.103728,-0.10373 0.103728,-0.27111 0,-0.16031 -0.08958,-0.25933 -0.08723,-0.10137 -0.261679,-0.12258 -0.103729,-0.0118 -0.59644,-0.0118 z m 0,1.3744 v 0.92413 h 0.645947 q 0.377195,0 0.478567,-0.0212 0.155593,-0.0283 0.252249,-0.13674 0.09901,-0.1108 0.09901,-0.29468 0,-0.15559 -0.07544,-0.26404 -0.07544,-0.10844 -0.219245,-0.15795 -0.141448,-0.0495 -0.617658,-0.0495 z m 2.788887,1.50643 v -3.45605 h 1.468704 q 0.554006,0 0.803898,0.0943 0.252249,0.0919 0.403127,0.33005 0.150878,0.23811 0.150878,0.54458 0,0.38898 -0.228674,0.64359 -0.228675,0.25225 -0.683667,0.31825 0.226317,0.13202 0.37248,0.28997 0.148521,0.15795 0.398413,0.56108 l 0.421987,0.67424 h -0.834544 l -0.504499,-0.75204 q -0.268752,-0.40312 -0.367766,-0.50685 -0.09901,-0.10609 -0.209815,-0.14381 -0.110801,-0.0401 -0.351263,-0.0401 h -0.141448 v 1.44277 z m 0.697811,-1.99442 h 0.516286 q 0.502141,0 0.627087,-0.0424 0.124946,-0.0424 0.195671,-0.14616 0.07072,-0.10373 0.07072,-0.25932 0,-0.17445 -0.0943,-0.28054 -0.09194,-0.10844 -0.261679,-0.13673 -0.08487,-0.0118 -0.509214,-0.0118 h -0.544576 z m 5.90311,1.99442 h -0.759106 l -0.301756,-0.78504 h -1.381478 l -0.285254,0.78504 h -0.740246 l 1.346116,-3.45605 h 0.737888 z m -1.284822,-1.36733 -0.476209,-1.28247 -0.466779,1.28247 z m 1.662016,1.36733 v -3.45605 h 0.678951 l 1.414483,2.30796 v -2.30796 h 0.648304 v 3.45605 h -0.700168 l -1.393266,-2.25374 v 2.25374 z m 5.690933,-1.27068 0.676594,0.21453 q -0.155593,0.56579 -0.518643,0.84162 -0.360693,0.27346 -0.917056,0.27346 -0.688382,0 -1.131586,-0.46913 -0.443205,-0.4715 -0.443205,-1.28718 0,-0.86284 0.445562,-1.33904 0.445562,-0.47857 1.171663,-0.47857 0.63416,0 1.030215,0.37484 0.235747,0.2216 0.35362,0.63651 l -0.690739,0.16503 q -0.06129,-0.26875 -0.256964,-0.42435 -0.193312,-0.15559 -0.471494,-0.15559 -0.384268,0 -0.62473,0.27582 -0.238104,0.27583 -0.238104,0.89348 0,0.65538 0.235747,0.93356 0.235747,0.27818 0.612942,0.27818 0.278182,0 0.478567,-0.17681 0.200385,-0.17681 0.287611,-0.55636 z m 1.277748,1.27068 v -3.45605 h 0.697812 v 1.36026 h 1.367333 v -1.36026 h 0.697811 v 3.45605 H 67.711327 V 154.793 h -1.367333 v 1.51114 z m 3.295747,1.01607 q 0.19567,-0.41963 0.275824,-0.64359 0.08015,-0.22396 0.148521,-0.51629 0.06837,-0.29232 0.101371,-0.554 0.033,-0.26404 0.033,-0.53986 0,-0.56108 -0.120231,-1.06087 -0.120231,-0.50214 -0.443205,-1.21645 h 0.450277 q 0.355978,0.50686 0.551648,1.07501 0.198028,0.56815 0.198028,1.1528 0,0.49271 -0.155593,1.05615 -0.176811,0.6318 -0.582296,1.2471 z"
+         id="text32230-6-8"
+         aria-label="EASTBOUND (BRANCH)" />
+      <path
+         style="font-weight:bold;font-size:4.8281px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Bold';text-align:center;letter-spacing:0.0461314px;word-spacing:0px;text-anchor:middle;stroke-width:0.157408px"
+         d="M 14.680083,122.91405 V 119.458 h 1.119799 q 0.636517,0 0.82983,0.0519 0.297041,0.0778 0.497426,0.33948 0.200385,0.25932 0.200385,0.67187 0,0.31826 -0.115516,0.53515 -0.115516,0.21689 -0.294684,0.34183 -0.17681,0.12259 -0.360693,0.16267 -0.249892,0.0495 -0.723743,0.0495 h -0.454992 v 1.30368 z m 0.697812,-2.8714 v 0.98071 h 0.38191 q 0.412557,0 0.551648,-0.0542 0.139091,-0.0542 0.216888,-0.16973 0.08015,-0.11552 0.08015,-0.26876 0,-0.18859 -0.110802,-0.31118 -0.110801,-0.12259 -0.280539,-0.15324 -0.124946,-0.0236 -0.502141,-0.0236 z m 2.427177,1.16459 q 0,-0.52808 0.15795,-0.88641 0.117874,-0.26404 0.320616,-0.47385 0.2051,-0.20982 0.44792,-0.31119 0.322973,-0.13673 0.744961,-0.13673 0.76382,0 1.221169,0.47385 0.459707,0.47385 0.459707,1.31783 0,0.8369 -0.454992,1.31075 -0.454991,0.47149 -1.216455,0.47149 -0.770893,0 -1.225884,-0.46913 -0.454992,-0.4715 -0.454992,-1.29661 z m 0.719028,-0.0236 q 0,0.58701 0.271109,0.89113 0.27111,0.30175 0.688382,0.30175 0.417272,0 0.683667,-0.29939 0.268751,-0.30176 0.268751,-0.90292 0,-0.59408 -0.261679,-0.88641 -0.259322,-0.29232 -0.690739,-0.29232 -0.431417,0 -0.695454,0.29704 -0.264037,0.29468 -0.264037,0.89112 z m 3.202785,1.73039 V 119.458 h 0.697811 v 3.45605 z m 1.415822,0 V 119.458 h 0.678952 l 1.414482,2.30796 V 119.458 h 0.648305 v 3.45605 h -0.700169 l -1.393266,-2.25374 v 2.25374 z m 4.303724,0 v -2.8714 h -1.0255 V 119.458 h 2.746454 v 0.58465 h -1.023143 v 2.8714 z m 2.040551,-1.12452 0.678952,-0.066 q 0.06129,0.34184 0.247534,0.50215 0.188598,0.1603 0.506857,0.1603 0.337118,0 0.506856,-0.14144 0.172095,-0.14381 0.172095,-0.33477 0,-0.12258 -0.07308,-0.20745 -0.07072,-0.0872 -0.249892,-0.15088 -0.122589,-0.0424 -0.558721,-0.15088 -0.561078,-0.13909 -0.787395,-0.34183 -0.318259,-0.28526 -0.318259,-0.69546 0,-0.26403 0.148521,-0.49271 0.150878,-0.23103 0.431417,-0.35126 0.282897,-0.12023 0.681309,-0.12023 0.650662,0 0.978351,0.28525 0.330046,0.28526 0.346548,0.76147 l -0.697811,0.0306 q -0.04479,-0.26639 -0.193313,-0.38191 -0.146163,-0.11787 -0.440847,-0.11787 -0.304114,0 -0.476209,0.12494 -0.110801,0.0802 -0.110801,0.21453 0,0.12259 0.103728,0.20982 0.132019,0.1108 0.641232,0.23103 0.509214,0.12023 0.752034,0.24989 0.245177,0.12731 0.38191,0.35127 0.139091,0.2216 0.139091,0.54929 0,0.29704 -0.165023,0.55636 -0.165023,0.25932 -0.46678,0.38663 -0.301756,0.12494 -0.752033,0.12494 -0.655377,0 -1.00664,-0.30175 -0.351263,-0.30412 -0.41963,-0.88406 z m 4.653969,0 0.678952,-0.066 q 0.06129,0.34184 0.247534,0.50215 0.188598,0.1603 0.506857,0.1603 0.337118,0 0.506856,-0.14144 0.172095,-0.14381 0.172095,-0.33477 0,-0.12258 -0.07308,-0.20745 -0.07072,-0.0872 -0.249892,-0.15088 -0.122589,-0.0424 -0.558721,-0.15088 -0.561078,-0.13909 -0.787395,-0.34183 -0.318259,-0.28526 -0.318259,-0.69546 0,-0.26403 0.148521,-0.49271 0.150878,-0.23103 0.431417,-0.35126 0.282897,-0.12023 0.681309,-0.12023 0.650662,0 0.97835,0.28525 0.330046,0.28526 0.346549,0.76147 l -0.697812,0.0306 q -0.04479,-0.26639 -0.193312,-0.38191 -0.146163,-0.11787 -0.440847,-0.11787 -0.304114,0 -0.476209,0.12494 -0.110802,0.0802 -0.110802,0.21453 0,0.12259 0.103729,0.20982 0.132019,0.1108 0.641232,0.23103 0.509214,0.12023 0.752033,0.24989 0.245177,0.12731 0.381911,0.35127 0.13909,0.2216 0.13909,0.54929 0,0.29704 -0.165022,0.55636 -0.165023,0.25932 -0.46678,0.38663 -0.301756,0.12494 -0.752033,0.12494 -0.655377,0 -1.00664,-0.30175 -0.351263,-0.30412 -0.41963,-0.88406 z m 3.443246,1.12452 V 119.458 h 2.562571 v 0.58465 h -1.864759 v 0.76618 h 1.735098 v 0.58229 h -1.735098 v 0.94063 h 1.930768 v 0.5823 z m 4.044403,0 v -2.8714 H 40.6031 V 119.458 h 2.746454 v 0.58465 h -1.023143 v 2.8714 z m 4.38286,0 v -2.8714 h -1.0255 V 119.458 h 2.746454 v 0.58465 h -1.023142 v 2.8714 z m 1.988689,-1.70681 q 0,-0.52808 0.15795,-0.88641 0.117874,-0.26404 0.320616,-0.47385 0.2051,-0.20982 0.44792,-0.31119 0.322973,-0.13673 0.744961,-0.13673 0.76382,0 1.221169,0.47385 0.459707,0.47385 0.459707,1.31783 0,0.8369 -0.454992,1.31075 -0.454992,0.47149 -1.216455,0.47149 -0.770893,0 -1.225884,-0.46913 -0.454992,-0.4715 -0.454992,-1.29661 z m 0.719028,-0.0236 q 0,0.58701 0.271109,0.89113 0.27111,0.30175 0.688382,0.30175 0.417272,0 0.683666,-0.29939 0.268752,-0.30176 0.268752,-0.90292 0,-0.59408 -0.261679,-0.88641 -0.259322,-0.29232 -0.690739,-0.29232 -0.431417,0 -0.695454,0.29704 -0.264037,0.29468 -0.264037,0.89112 z"
+         id="text7127-6-7-9-8-0"
+         transform="scale(1.0001569,0.99984313)"
+         aria-label="POINTS SET TO" />
+      <path
+         style="font-weight:bold;font-size:4.8281px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;stroke-width:1.18235"
+         d="M 14.68238,129.96906 V 126.513 h 2.562571 v 0.58466 h -1.86476 v 0.76617 h 1.735099 v 0.5823 h -1.735099 v 0.94063 h 1.930769 v 0.5823 z m 6.336881,0 H 20.260156 L 19.9584,129.18402 h -1.381478 l -0.285254,0.78504 h -0.740246 l 1.346116,-3.45606 h 0.737888 z m -1.284821,-1.36734 -0.476209,-1.28246 -0.466779,1.28246 z m 1.478134,0.24282 0.678952,-0.066 q 0.06129,0.34184 0.247534,0.50214 0.188598,0.16031 0.506856,0.16031 0.337119,0 0.506857,-0.14145 0.172095,-0.1438 0.172095,-0.33476 0,-0.12259 -0.07308,-0.20745 -0.07072,-0.0872 -0.249892,-0.15088 -0.122588,-0.0424 -0.55872,-0.15088 -0.561078,-0.13909 -0.787395,-0.34183 -0.318259,-0.28526 -0.318259,-0.69546 0,-0.26403 0.148521,-0.49271 0.150878,-0.23103 0.431417,-0.35126 0.282896,-0.12023 0.681309,-0.12023 0.650662,0 0.97835,0.28525 0.330046,0.28525 0.346548,0.76146 l -0.697811,0.0306 q -0.04479,-0.26639 -0.193312,-0.38191 -0.146164,-0.11787 -0.440848,-0.11787 -0.304113,0 -0.476209,0.12494 -0.110801,0.0802 -0.110801,0.21453 0,0.12259 0.103729,0.20982 0.132018,0.1108 0.641232,0.23103 0.509214,0.12023 0.752033,0.24989 0.245177,0.1273 0.38191,0.35126 0.139091,0.22161 0.139091,0.5493 0,0.29704 -0.165023,0.55636 -0.165023,0.25932 -0.466779,0.38662 -0.301756,0.12495 -0.752033,0.12495 -0.655377,0 -1.00664,-0.30176 -0.351263,-0.30411 -0.41963,-0.88405 z m 4.175081,1.12452 v -2.8714 h -1.0255 V 126.513 h 2.746454 v 0.58466 h -1.023142 v 2.8714 z m 2.173588,-3.45606 h 1.381478 q 0.4102,0 0.610585,0.0354 0.202742,0.033 0.360693,0.14144 0.160308,0.10845 0.266394,0.28997 0.106086,0.17917 0.106086,0.40313 0,0.24282 -0.132018,0.44556 -0.129661,0.20274 -0.353621,0.30412 0.315901,0.0919 0.485639,0.31354 0.169738,0.2216 0.169738,0.521 0,0.23575 -0.110801,0.45971 -0.108443,0.2216 -0.299399,0.35597 -0.188597,0.13202 -0.466779,0.16267 -0.174453,0.0189 -0.841617,0.0236 h -1.176378 z m 0.697812,0.57523 v 0.79918 h 0.457349 q 0.407842,0 0.506856,-0.0118 0.179168,-0.0212 0.280539,-0.12259 0.103729,-0.10373 0.103729,-0.27111 0,-0.1603 -0.08958,-0.25932 -0.08723,-0.10137 -0.261679,-0.12259 -0.103729,-0.0118 -0.59644,-0.0118 z m 0,1.3744 v 0.92413 h 0.645947 q 0.377195,0 0.478566,-0.0212 0.155593,-0.0283 0.252249,-0.13673 0.09901,-0.1108 0.09901,-0.29468 0,-0.1556 -0.07544,-0.26404 -0.07544,-0.10844 -0.219245,-0.15795 -0.141448,-0.0495 -0.617657,-0.0495 z m 2.645082,-0.20038 q 0,-0.52808 0.15795,-0.88641 0.117874,-0.26404 0.320616,-0.47385 0.2051,-0.20982 0.44792,-0.31119 0.322973,-0.13673 0.74496,-0.13673 0.763821,0 1.22117,0.47385 0.459707,0.47385 0.459707,1.31782 0,0.83691 -0.454992,1.31076 -0.454992,0.47149 -1.216455,0.47149 -0.770893,0 -1.225885,-0.46913 -0.454991,-0.4715 -0.454991,-1.29661 z m 0.719028,-0.0236 q 0,0.58701 0.271109,0.89113 0.271109,0.30175 0.688382,0.30175 0.417272,0 0.683666,-0.2994 0.268752,-0.30175 0.268752,-0.90291 0,-0.59408 -0.261679,-0.88641 -0.259322,-0.29232 -0.690739,-0.29232 -0.431417,0 -0.695454,0.29704 -0.264037,0.29468 -0.264037,0.89112 z m 3.173156,-1.72567 h 0.697811 v 1.87183 q 0,0.44557 0.02593,0.57759 0.04479,0.21217 0.212172,0.34183 0.169738,0.1273 0.462064,0.1273 0.297042,0 0.44792,-0.12023 0.150878,-0.12259 0.181525,-0.2994 0.03065,-0.17681 0.03065,-0.58701 V 126.513 h 0.697811 v 1.81526 q 0,0.62237 -0.05658,0.87933 -0.05658,0.25697 -0.209815,0.43378 -0.150878,0.17681 -0.405485,0.28289 -0.254607,0.10373 -0.664807,0.10373 -0.495068,0 -0.752033,-0.11316 -0.254607,-0.11551 -0.403127,-0.29704 -0.148521,-0.18388 -0.19567,-0.38427 -0.06837,-0.29704 -0.06837,-0.87697 z m 3.498486,3.45606 V 126.513 h 0.678951 l 1.414483,2.30797 V 126.513 h 0.648304 v 3.45606 h -0.700169 l -1.393265,-2.25375 v 2.25375 z m 3.47727,-3.45606 h 1.275391 q 0.431418,0 0.657735,0.066 0.304114,0.0896 0.521001,0.31826 0.216887,0.22868 0.330046,0.56108 0.113158,0.33004 0.113158,0.81568 0,0.42671 -0.106086,0.73553 -0.129661,0.3772 -0.370123,0.61059 -0.181525,0.17681 -0.490354,0.27582 -0.231032,0.0731 -0.617657,0.0731 h -1.313111 z m 0.697811,0.58466 v 2.2891 h 0.521001 q 0.292327,0 0.421987,-0.033 0.169738,-0.0424 0.280539,-0.14381 0.113159,-0.10137 0.183883,-0.3324 0.07072,-0.23339 0.07072,-0.63416 0,-0.40077 -0.07072,-0.6153 -0.07072,-0.21453 -0.198027,-0.33476 -0.127304,-0.12024 -0.322974,-0.16267 -0.146163,-0.033 -0.572865,-0.033 z m 5.226513,3.88747 h -0.454992 q -0.360693,-0.54458 -0.549291,-1.13159 -0.188597,-0.58701 -0.188597,-1.1363 0,-0.68131 0.233389,-1.28954 0.202743,-0.52807 0.513929,-0.97363 h 0.452634 q -0.322973,0.71431 -0.445562,1.21645 -0.120231,0.49978 -0.120231,1.06086 0,0.38663 0.07072,0.79211 0.07308,0.40549 0.198028,0.7709 0.08251,0.24046 0.289969,0.69074 z M 48.2009,129.96906 V 126.513 h 1.04436 l 0.627087,2.35747 0.620015,-2.35747 h 1.046717 v 3.45606 h -0.648305 v -2.72053 l -0.686024,2.72053 h -0.671879 l -0.683666,-2.72053 v 2.72053 z m 7.147853,0 h -0.759105 l -0.301757,-0.78504 h -1.381477 l -0.285254,0.78504 H 51.880914 L 53.22703,126.513 h 0.737888 z m -1.284821,-1.36734 -0.476209,-1.28246 -0.46678,1.28246 z m 1.633726,1.36734 V 126.513 h 0.697811 v 3.45606 z m 1.36969,0 V 126.513 h 0.678951 l 1.414483,2.30797 V 126.513 h 0.648304 v 3.45606 h -0.700169 l -1.393265,-2.25375 v 2.25375 z m 3.291028,1.01607 q 0.19567,-0.41963 0.275824,-0.64359 0.08015,-0.22396 0.14852,-0.51629 0.06837,-0.29233 0.101372,-0.55401 0.033,-0.26403 0.033,-0.53986 0,-0.56108 -0.120231,-1.06086 -0.120231,-0.50214 -0.443204,-1.21645 h 0.450277 q 0.355978,0.50685 0.551648,1.075 0.198027,0.56815 0.198027,1.15281 0,0.49271 -0.155593,1.05614 -0.17681,0.63181 -0.582295,1.24711 z"
+         id="text32230-6-8-5"
+         aria-label="EASTBOUND (MAIN)" />
+    </g>
+  </g>
+</svg>

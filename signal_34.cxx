@@ -3,8 +3,7 @@
 Signal34::Signal34(QWidget *parent)
     : QMainWindow{parent}
 {
-    const YRB::Scaler* scaler_ = new YRB::Scaler;
-    this->setGeometry(1.02*scaler_->screen_width(), 0.03*scaler_->screen_height(), 0.2*scaler_->screen_width(), 0.3*scaler_->screen_height());
+    this->setGeometry(1.02*YRB::SCALER.screen_width(), 0.03*YRB::SCALER.screen_height(), 0.2*YRB::SCALER.screen_width(), 0.3*YRB::SCALER.screen_height());
     this->setWindowTitle("YR.3/4");
     signal_34_svg_->setGeometry(0, 0, this->width(), this->height());
     signal_34_svg_->show();
@@ -21,20 +20,20 @@ Signal34::Signal34(QWidget *parent)
     subsid_clear_svgs_[YRB::SignalState::On] = new QSvgWidget(":/svgs/media/Sig34Subsid_Off.svg", this);
     subsid_clear_svgs_[YRB::SignalState::Off] = new QSvgWidget(":/svgs/media/Sig34Subsid_GreenOn.svg", this);
 
-    set_stop_sig_size_(0.043*scaler_->screen_width(), 0.043*scaler_->screen_width());
-    set_stop_sig_position_(0.106*scaler_->screen_width(), 0.1965*scaler_->screen_height());
+    set_stop_sig_size_(0.043*YRB::SCALER.screen_width(), 0.043*YRB::SCALER.screen_width());
+    set_stop_sig_position_(0.106*YRB::SCALER.screen_width(), 0.1965*YRB::SCALER.screen_height());
 
-    set_clear_sig_size_(0.043*scaler_->screen_width(), 0.043*scaler_->screen_width());
-    set_clear_sig_position_(0.106*scaler_->screen_width(), 0.1465*scaler_->screen_height());
+    set_clear_sig_size_(0.043*YRB::SCALER.screen_width(), 0.043*YRB::SCALER.screen_width());
+    set_clear_sig_position_(0.106*YRB::SCALER.screen_width(), 0.1465*YRB::SCALER.screen_height());
 
-    set_clear_subsid_position_(0.145*scaler_->screen_width(), 0.167*scaler_->screen_width());
-    set_clear_subsid_size_(0.02*scaler_->screen_width(), 0.02*scaler_->screen_height());
+    set_clear_subsid_position_(0.145*YRB::SCALER.screen_width(), 0.167*YRB::SCALER.screen_width());
+    set_clear_subsid_size_(0.02*YRB::SCALER.screen_width(), 0.02*YRB::SCALER.screen_height());
 
-    set_stop_subsid_position_(0.145*scaler_->screen_width(), 0.215*scaler_->screen_width());
-    set_stop_subsid_size_(0.02*scaler_->screen_width(), 0.02*scaler_->screen_height());
+    set_stop_subsid_position_(0.145*YRB::SCALER.screen_width(), 0.215*YRB::SCALER.screen_width());
+    set_stop_subsid_size_(0.02*YRB::SCALER.screen_width(), 0.02*YRB::SCALER.screen_height());
 
-    set_feather_size_(0.102*scaler_->screen_width(), 0.102*scaler_->screen_width());
-    set_feather_position_(0.052*scaler_->screen_width(), 0.023*scaler_->screen_height());
+    set_feather_size_(0.102*YRB::SCALER.screen_width(), 0.102*YRB::SCALER.screen_width());
+    set_feather_position_(0.052*YRB::SCALER.screen_width(), 0.023*YRB::SCALER.screen_height());
     feather_svgs_[YRB::PointsState::Normal]->show();
     feather_svgs_[YRB::PointsState::Reverse]->hide();
     setAspect(YRB::SignalState::On);

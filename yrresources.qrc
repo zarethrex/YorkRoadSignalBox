@@ -1,6 +1,5 @@
 <RCC>
     <qresource prefix="/svgs">
-        <file>media/YRFrame.svg</file>
         <file>media/Black_LeverBack.svg</file>
         <file>media/Black_LeverForward.svg</file>
         <file>media/Black_LeverMid.svg</file>
@@ -43,6 +42,7 @@
         <file>media/Sig34_AmberOn.svg</file>
         <file>media/Signal2.svg</file>
         <file>media/Sig34Subsid_AmberOn.svg</file>
+        <file>media/YRFrame_Flattened.svg</file>
     </qresource>
     <qresource prefix="/audio">
         <file>audio/lever_fail.wav</file>

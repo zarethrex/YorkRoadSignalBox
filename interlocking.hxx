@@ -4,6 +4,7 @@
 #include <QPair>
 #include <QSoundEffect>
 #include <QObject>
+#include <memory>
 
 #include "signal.hxx"
 #include "points.hxx"
@@ -53,6 +54,7 @@ namespace YRB
             void setOccupied(QString block, bool is_occupied=true);
             bool Query(const int& id);
             void update(const int& id);
+            Points* getPoints() const {return _points;}
         signals:
             void broadcastSignal(int id, YRB::SignalState state);
             void broadcastPoints(YRB::PointsState state);

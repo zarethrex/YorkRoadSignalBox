@@ -15,7 +15,6 @@ namespace YRB {
     QMap<int, QMap<LeverState, QSvgWidget*>> _lever_svgs;
     QMap<char, QMap<bool, QSvgWidget*>> _block_svgs;
     QMap<PointsState, QMap<SignalState, QSvgWidget*>> _point_ind_svgs;
-    Scaler* _scaler = new Scaler;
     void _place_signal_at(const int id, const int x, const int y);
     void _place_lever_at(const int id, const int x, const int y);
     void _set_lever_size_at(const int id, const int x, const int y);
@@ -28,12 +27,13 @@ namespace YRB {
         Graphics(QWidget* parent);
     public slots:
         void updateSignalGraphic(int id, YRB::SignalState state) {
-            _map_indicator_svgs[id][YRB::SignalState::Off]->hide();
-            _map_indicator_svgs[id][YRB::SignalState::On]->hide();
-            if(state == YRB::SignalState::Caution && !_map_indicator_svgs[id].contains(YRB::SignalState::Caution)) {
-                state = YRB::SignalState::On;
+            if(state == YRB::SignalState::On) {
+                _map_indicator_svgs[id][YRB::SignalState::On]->show();
+                _map_indicator_svgs[id][YRB::SignalState::Off]->hide();
+            } else {
+                _map_indicator_svgs[id][YRB::SignalState::On]->hide();
+                _map_indicator_svgs[id][YRB::SignalState::Off]->show();
             }
-            _map_indicator_svgs[id][state]->show();
         }
         void updateLeverGraphic(int id, YRB::LeverState state) {
             _lever_svgs[id][YRB::LeverState::On]->hide();

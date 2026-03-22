@@ -5,6 +5,8 @@
 #include <QObject>
 #include <QPushButton>
 
+#include <memory>
+
 #include "scaling.hxx"
 
 class SimulationPanel : public QMainWindow
